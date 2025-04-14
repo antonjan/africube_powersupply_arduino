@@ -1,0 +1,2521 @@
+
+/tmp/arduino_build_260952/AfriCube_Power_supply_v1.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	0c 94 62 00 	jmp	0xc4	; 0xc4 <__ctors_end>
+   4:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+   8:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+   c:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  10:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  14:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  18:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  1c:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  20:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  24:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  28:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  2c:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  30:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  34:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  38:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  3c:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  40:	0c 94 1f 03 	jmp	0x63e	; 0x63e <__vector_16>
+  44:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  48:	0c 94 ed 02 	jmp	0x5da	; 0x5da <__vector_18>
+  4c:	0c 94 c7 02 	jmp	0x58e	; 0x58e <__vector_19>
+  50:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  54:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  58:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  5c:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+  60:	0c 94 66 03 	jmp	0x6cc	; 0x6cc <__vector_24>
+  64:	0c 94 8a 00 	jmp	0x114	; 0x114 <__bad_interrupt>
+
+00000068 <__trampolines_end>:
+__trampolines_start():
+  68:	00 00       	nop
+  6a:	00 00       	nop
+  6c:	24 00       	.word	0x0024	; ????
+  6e:	27 00       	.word	0x0027	; ????
+  70:	2a 00       	.word	0x002a	; ????
+
+00000072 <port_to_output_PGM>:
+  72:	00 00 00 00 25 00 28 00 2b 00                       ....%.(.+.
+
+0000007c <digital_pin_to_port_PGM>:
+  7c:	04 04 04 04 04 04 04 04 02 02 02 02 02 02 03 03     ................
+  8c:	03 03 03 03 02 02 03                                .......
+
+00000093 <digital_pin_to_bit_mask_PGM>:
+  93:	01 02 04 08 10 20 40 80 01 02 04 08 10 20 01 02     ..... @...... ..
+  a3:	04 08 10 20 40 80 40                                ... @.@
+
+000000aa <digital_pin_to_timer_PGM>:
+  aa:	00 00 00 09 00 03 02 00 00 04 05 08 00 00 00 00     ................
+	...
+
+000000c2 <__ctors_start>:
+__ctors_start():
+  c2:	7b 04       	cpc	r7, r11
+
+000000c4 <__ctors_end>:
+__dtors_end():
+  c4:	11 24       	eor	r1, r1
+  c6:	1f be       	out	0x3f, r1	; 63
+  c8:	cf ef       	ldi	r28, 0xFF	; 255
+  ca:	d8 e0       	ldi	r29, 0x08	; 8
+  cc:	de bf       	out	0x3e, r29	; 62
+  ce:	cd bf       	out	0x3d, r28	; 61
+
+000000d0 <__do_copy_data>:
+__do_copy_data():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  d0:	11 e0       	ldi	r17, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  d2:	a0 e0       	ldi	r26, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  d4:	b1 e0       	ldi	r27, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  d6:	ee e2       	ldi	r30, 0x2E	; 46
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  d8:	fa e0       	ldi	r31, 0x0A	; 10
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  da:	02 c0       	rjmp	.+4      	; 0xe0 <__do_copy_data+0x10>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  dc:	05 90       	lpm	r0, Z+
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  de:	0d 92       	st	X+, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  e0:	a2 31       	cpi	r26, 0x12	; 18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  e2:	b1 07       	cpc	r27, r17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  e4:	d9 f7       	brne	.-10     	; 0xdc <__do_copy_data+0xc>
+
+000000e6 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  e6:	22 e0       	ldi	r18, 0x02	; 2
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  e8:	a2 e1       	ldi	r26, 0x12	; 18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  ea:	b1 e0       	ldi	r27, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  ec:	01 c0       	rjmp	.+2      	; 0xf0 <.do_clear_bss_start>
+
+000000ee <.do_clear_bss_loop>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  ee:	1d 92       	st	X+, r1
+
+000000f0 <.do_clear_bss_start>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  f0:	a6 30       	cpi	r26, 0x06	; 6
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  f2:	b2 07       	cpc	r27, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  f4:	e1 f7       	brne	.-8      	; 0xee <.do_clear_bss_loop>
+
+000000f6 <__do_global_ctors>:
+__do_global_ctors():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2466
+  f6:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2467
+  f8:	c2 e6       	ldi	r28, 0x62	; 98
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2468
+  fa:	d0 e0       	ldi	r29, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2472
+  fc:	04 c0       	rjmp	.+8      	; 0x106 <__do_global_ctors+0x10>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2474
+  fe:	21 97       	sbiw	r28, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2480
+ 100:	fe 01       	movw	r30, r28
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2481
+ 102:	0e 94 0f 05 	call	0xa1e	; 0xa1e <__tablejump2__>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2483
+ 106:	c1 36       	cpi	r28, 0x61	; 97
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2484
+ 108:	d1 07       	cpc	r29, r17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2489
+ 10a:	c9 f7       	brne	.-14     	; 0xfe <__do_global_ctors+0x8>
+ 10c:	0e 94 a8 04 	call	0x950	; 0x950 <main>
+ 110:	0c 94 15 05 	jmp	0xa2a	; 0xa2a <_exit>
+
+00000114 <__bad_interrupt>:
+__vector_22():
+ 114:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000118 <digitalWrite.constprop.4>:
+digitalWrite.constprop.4():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:189
+  }
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  uint8_t timer = digitalPinToTimer(pin);
+ 118:	ea ea       	ldi	r30, 0xAA	; 170
+ 11a:	f0 e0       	ldi	r31, 0x00	; 0
+ 11c:	24 91       	lpm	r18, Z
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:190
+  uint8_t bit = digitalPinToBitMask(pin);
+ 11e:	e3 e9       	ldi	r30, 0x93	; 147
+ 120:	f0 e0       	ldi	r31, 0x00	; 0
+ 122:	94 91       	lpm	r25, Z
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:191
+  uint8_t port = digitalPinToPort(pin);
+ 124:	ec e7       	ldi	r30, 0x7C	; 124
+ 126:	f0 e0       	ldi	r31, 0x00	; 0
+ 128:	e4 91       	lpm	r30, Z
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:194
+  volatile uint8_t *out;
+
+  if (port == NOT_A_PIN) return;
+ 12a:	ee 23       	and	r30, r30
+ 12c:	c9 f0       	breq	.+50     	; 0x160 <digitalWrite.constprop.4+0x48>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:198
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 12e:	22 23       	and	r18, r18
+ 130:	39 f0       	breq	.+14     	; 0x140 <digitalWrite.constprop.4+0x28>
+turnOffPWM():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:77
+//
+//static inline void turnOffPWM(uint8_t timer) __attribute__ ((always_inline));
+//static inline void turnOffPWM(uint8_t timer)
+static void turnOffPWM(uint8_t timer)
+{
+  switch (timer)
+ 132:	24 30       	cpi	r18, 0x04	; 4
+ 134:	01 f1       	breq	.+64     	; 0x176 <digitalWrite.constprop.4+0x5e>
+ 136:	a8 f4       	brcc	.+42     	; 0x162 <digitalWrite.constprop.4+0x4a>
+ 138:	22 30       	cpi	r18, 0x02	; 2
+ 13a:	69 f1       	breq	.+90     	; 0x196 <digitalWrite.constprop.4+0x7e>
+ 13c:	23 30       	cpi	r18, 0x03	; 3
+ 13e:	79 f1       	breq	.+94     	; 0x19e <digitalWrite.constprop.4+0x86>
+digitalWrite.constprop.4():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:200
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+ 140:	f0 e0       	ldi	r31, 0x00	; 0
+ 142:	ee 0f       	add	r30, r30
+ 144:	ff 1f       	adc	r31, r31
+ 146:	ee 58       	subi	r30, 0x8E	; 142
+ 148:	ff 4f       	sbci	r31, 0xFF	; 255
+ 14a:	a5 91       	lpm	r26, Z+
+ 14c:	b4 91       	lpm	r27, Z
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:202
+
+  uint8_t oldSREG = SREG;
+ 14e:	2f b7       	in	r18, 0x3f	; 63
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:203
+  cli();
+ 150:	f8 94       	cli
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:206
+
+  if (val == LOW) {
+    *out &= ~bit;
+ 152:	ec 91       	ld	r30, X
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:205
+  out = portOutputRegister(port);
+
+  uint8_t oldSREG = SREG;
+  cli();
+
+  if (val == LOW) {
+ 154:	81 11       	cpse	r24, r1
+ 156:	26 c0       	rjmp	.+76     	; 0x1a4 <digitalWrite.constprop.4+0x8c>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:206
+    *out &= ~bit;
+ 158:	90 95       	com	r25
+ 15a:	9e 23       	and	r25, r30
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:208
+  } else {
+    *out |= bit;
+ 15c:	9c 93       	st	X, r25
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:211
+  }
+
+  SREG = oldSREG;
+ 15e:	2f bf       	out	0x3f, r18	; 63
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:212
+}
+ 160:	08 95       	ret
+turnOffPWM():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:77
+//
+//static inline void turnOffPWM(uint8_t timer) __attribute__ ((always_inline));
+//static inline void turnOffPWM(uint8_t timer)
+static void turnOffPWM(uint8_t timer)
+{
+  switch (timer)
+ 162:	28 30       	cpi	r18, 0x08	; 8
+ 164:	71 f0       	breq	.+28     	; 0x182 <digitalWrite.constprop.4+0x6a>
+ 166:	29 30       	cpi	r18, 0x09	; 9
+ 168:	91 f0       	breq	.+36     	; 0x18e <digitalWrite.constprop.4+0x76>
+ 16a:	25 30       	cpi	r18, 0x05	; 5
+ 16c:	49 f7       	brne	.-46     	; 0x140 <digitalWrite.constprop.4+0x28>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:87
+        TCCR1A &= ~_BV(COM1A1);
+        break;
+    #endif
+    #if defined(TCCR1A) && defined(COM1B1)
+      case TIMER1B:
+        TCCR1A &= ~_BV(COM1B1);
+ 16e:	20 91 80 00 	lds	r18, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 172:	2f 7d       	andi	r18, 0xDF	; 223
+ 174:	03 c0       	rjmp	.+6      	; 0x17c <digitalWrite.constprop.4+0x64>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:82
+  switch (timer)
+  {
+    // Timer1
+    #if defined(TCCR1A) && defined(COM1A1)
+      case TIMER1A:
+        TCCR1A &= ~_BV(COM1A1);
+ 176:	20 91 80 00 	lds	r18, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 17a:	2f 77       	andi	r18, 0x7F	; 127
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:87
+        break;
+    #endif
+    #if defined(TCCR1A) && defined(COM1B1)
+      case TIMER1B:
+        TCCR1A &= ~_BV(COM1B1);
+ 17c:	20 93 80 00 	sts	0x0080, r18	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 180:	df cf       	rjmp	.-66     	; 0x140 <digitalWrite.constprop.4+0x28>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:104
+        TCCR2 &= ~_BV(COM21);
+        break;
+    #endif
+    #if defined(TCCR2A) && defined(COM2A1)
+      case TIMER2A:
+        TCCR2A &= ~_BV(COM2A1);
+ 182:	20 91 b0 00 	lds	r18, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 186:	2f 77       	andi	r18, 0x7F	; 127
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:109
+        break;
+    #endif
+    #if defined(TCCR2A) && defined(COM2B1)
+      case TIMER2B:
+        TCCR2A &= ~_BV(COM2B1);
+ 188:	20 93 b0 00 	sts	0x00B0, r18	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 18c:	d9 cf       	rjmp	.-78     	; 0x140 <digitalWrite.constprop.4+0x28>
+ 18e:	20 91 b0 00 	lds	r18, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 192:	2f 7d       	andi	r18, 0xDF	; 223
+ 194:	f9 cf       	rjmp	.-14     	; 0x188 <digitalWrite.constprop.4+0x70>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:176
+        TCCR0 &= ~_BV(COM01);
+        break;
+    #endif
+    #if defined(TCCR0A) && defined(COM0A1)
+      case TIMER0A:
+        TCCR0A &= ~_BV(COM0A1);
+ 196:	24 b5       	in	r18, 0x24	; 36
+ 198:	2f 77       	andi	r18, 0x7F	; 127
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:181
+        break;
+    #endif
+    #if defined(TCCR0A) && defined(COM0B1)
+      case TIMER0B:
+        TCCR0A &= ~_BV(COM0B1);
+ 19a:	24 bd       	out	0x24, r18	; 36
+ 19c:	d1 cf       	rjmp	.-94     	; 0x140 <digitalWrite.constprop.4+0x28>
+ 19e:	24 b5       	in	r18, 0x24	; 36
+ 1a0:	2f 7d       	andi	r18, 0xDF	; 223
+ 1a2:	fb cf       	rjmp	.-10     	; 0x19a <digitalWrite.constprop.4+0x82>
+digitalWrite.constprop.4():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:208
+  cli();
+
+  if (val == LOW) {
+    *out &= ~bit;
+  } else {
+    *out |= bit;
+ 1a4:	9e 2b       	or	r25, r30
+ 1a6:	da cf       	rjmp	.-76     	; 0x15c <digitalWrite.constprop.4+0x44>
+
+000001a8 <HardwareSerial::availableForWrite()>:
+_ZN14HardwareSerial17availableForWriteEv():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:195
+{
+  tx_buffer_index_t head;
+  tx_buffer_index_t tail;
+
+  TX_BUFFER_ATOMIC {
+    head = _tx_buffer_head;
+ 1a8:	fc 01       	movw	r30, r24
+ 1aa:	53 8d       	ldd	r21, Z+27	; 0x1b
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:196
+    tail = _tx_buffer_tail;
+ 1ac:	44 8d       	ldd	r20, Z+28	; 0x1c
+ 1ae:	25 2f       	mov	r18, r21
+ 1b0:	30 e0       	ldi	r19, 0x00	; 0
+ 1b2:	84 2f       	mov	r24, r20
+ 1b4:	90 e0       	ldi	r25, 0x00	; 0
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:198
+  }
+  if (head >= tail) return SERIAL_TX_BUFFER_SIZE - 1 - head + tail;
+ 1b6:	82 1b       	sub	r24, r18
+ 1b8:	93 0b       	sbc	r25, r19
+ 1ba:	54 17       	cp	r21, r20
+ 1bc:	10 f0       	brcs	.+4      	; 0x1c2 <HardwareSerial::availableForWrite()+0x1a>
+ 1be:	cf 96       	adiw	r24, 0x3f	; 63
+ 1c0:	08 95       	ret
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:199
+  return tail - head - 1;
+ 1c2:	01 97       	sbiw	r24, 0x01	; 1
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:200
+}
+ 1c4:	08 95       	ret
+
+000001c6 <HardwareSerial::read()>:
+_ZN14HardwareSerial4readEv():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:178
+    return _rx_buffer[_rx_buffer_tail];
+  }
+}
+
+int HardwareSerial::read(void)
+{
+ 1c6:	fc 01       	movw	r30, r24
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:180
+  // if the head isn't ahead of the tail, we don't have any characters
+  if (_rx_buffer_head == _rx_buffer_tail) {
+ 1c8:	91 8d       	ldd	r25, Z+25	; 0x19
+ 1ca:	82 8d       	ldd	r24, Z+26	; 0x1a
+ 1cc:	98 17       	cp	r25, r24
+ 1ce:	61 f0       	breq	.+24     	; 0x1e8 <HardwareSerial::read()+0x22>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:183
+    return -1;
+  } else {
+    unsigned char c = _rx_buffer[_rx_buffer_tail];
+ 1d0:	a2 8d       	ldd	r26, Z+26	; 0x1a
+ 1d2:	ae 0f       	add	r26, r30
+ 1d4:	bf 2f       	mov	r27, r31
+ 1d6:	b1 1d       	adc	r27, r1
+ 1d8:	5d 96       	adiw	r26, 0x1d	; 29
+ 1da:	8c 91       	ld	r24, X
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:184
+    _rx_buffer_tail = (rx_buffer_index_t)(_rx_buffer_tail + 1) % SERIAL_RX_BUFFER_SIZE;
+ 1dc:	92 8d       	ldd	r25, Z+26	; 0x1a
+ 1de:	9f 5f       	subi	r25, 0xFF	; 255
+ 1e0:	9f 73       	andi	r25, 0x3F	; 63
+ 1e2:	92 8f       	std	Z+26, r25	; 0x1a
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:185
+    return c;
+ 1e4:	90 e0       	ldi	r25, 0x00	; 0
+ 1e6:	08 95       	ret
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:181
+
+int HardwareSerial::read(void)
+{
+  // if the head isn't ahead of the tail, we don't have any characters
+  if (_rx_buffer_head == _rx_buffer_tail) {
+    return -1;
+ 1e8:	8f ef       	ldi	r24, 0xFF	; 255
+ 1ea:	9f ef       	ldi	r25, 0xFF	; 255
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:187
+  } else {
+    unsigned char c = _rx_buffer[_rx_buffer_tail];
+    _rx_buffer_tail = (rx_buffer_index_t)(_rx_buffer_tail + 1) % SERIAL_RX_BUFFER_SIZE;
+    return c;
+  }
+}
+ 1ec:	08 95       	ret
+
+000001ee <HardwareSerial::peek()>:
+_ZN14HardwareSerial4peekEv():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:169
+{
+  return ((unsigned int)(SERIAL_RX_BUFFER_SIZE + _rx_buffer_head - _rx_buffer_tail)) % SERIAL_RX_BUFFER_SIZE;
+}
+
+int HardwareSerial::peek(void)
+{
+ 1ee:	fc 01       	movw	r30, r24
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:170
+  if (_rx_buffer_head == _rx_buffer_tail) {
+ 1f0:	91 8d       	ldd	r25, Z+25	; 0x19
+ 1f2:	82 8d       	ldd	r24, Z+26	; 0x1a
+ 1f4:	98 17       	cp	r25, r24
+ 1f6:	31 f0       	breq	.+12     	; 0x204 <HardwareSerial::peek()+0x16>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:173
+    return -1;
+  } else {
+    return _rx_buffer[_rx_buffer_tail];
+ 1f8:	82 8d       	ldd	r24, Z+26	; 0x1a
+ 1fa:	e8 0f       	add	r30, r24
+ 1fc:	f1 1d       	adc	r31, r1
+ 1fe:	85 8d       	ldd	r24, Z+29	; 0x1d
+ 200:	90 e0       	ldi	r25, 0x00	; 0
+ 202:	08 95       	ret
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:171
+}
+
+int HardwareSerial::peek(void)
+{
+  if (_rx_buffer_head == _rx_buffer_tail) {
+    return -1;
+ 204:	8f ef       	ldi	r24, 0xFF	; 255
+ 206:	9f ef       	ldi	r25, 0xFF	; 255
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:175
+  } else {
+    return _rx_buffer[_rx_buffer_tail];
+  }
+}
+ 208:	08 95       	ret
+
+0000020a <HardwareSerial::available()>:
+_ZN14HardwareSerial9availableEv():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:164
+  // clear any received data
+  _rx_buffer_head = _rx_buffer_tail;
+}
+
+int HardwareSerial::available(void)
+{
+ 20a:	fc 01       	movw	r30, r24
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:165
+  return ((unsigned int)(SERIAL_RX_BUFFER_SIZE + _rx_buffer_head - _rx_buffer_tail)) % SERIAL_RX_BUFFER_SIZE;
+ 20c:	91 8d       	ldd	r25, Z+25	; 0x19
+ 20e:	22 8d       	ldd	r18, Z+26	; 0x1a
+ 210:	89 2f       	mov	r24, r25
+ 212:	90 e0       	ldi	r25, 0x00	; 0
+ 214:	80 5c       	subi	r24, 0xC0	; 192
+ 216:	9f 4f       	sbci	r25, 0xFF	; 255
+ 218:	82 1b       	sub	r24, r18
+ 21a:	91 09       	sbc	r25, r1
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:166
+}
+ 21c:	8f 73       	andi	r24, 0x3F	; 63
+ 21e:	99 27       	eor	r25, r25
+ 220:	08 95       	ret
+
+00000222 <HardwareSerial::_tx_udr_empty_irq()>:
+_ZN14HardwareSerial17_tx_udr_empty_irqEv():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:90
+#endif
+
+// Actual interrupt handlers //////////////////////////////////////////////////////////////
+
+void HardwareSerial::_tx_udr_empty_irq(void)
+{
+ 222:	fc 01       	movw	r30, r24
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:93
+  // If interrupts are enabled, there must be more data in the output
+  // buffer. Send the next byte
+  unsigned char c = _tx_buffer[_tx_buffer_tail];
+ 224:	a4 8d       	ldd	r26, Z+28	; 0x1c
+ 226:	a8 0f       	add	r26, r24
+ 228:	b9 2f       	mov	r27, r25
+ 22a:	b1 1d       	adc	r27, r1
+ 22c:	a3 5a       	subi	r26, 0xA3	; 163
+ 22e:	bf 4f       	sbci	r27, 0xFF	; 255
+ 230:	2c 91       	ld	r18, X
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:94
+  _tx_buffer_tail = (_tx_buffer_tail + 1) % SERIAL_TX_BUFFER_SIZE;
+ 232:	84 8d       	ldd	r24, Z+28	; 0x1c
+ 234:	90 e0       	ldi	r25, 0x00	; 0
+ 236:	01 96       	adiw	r24, 0x01	; 1
+ 238:	8f 73       	andi	r24, 0x3F	; 63
+ 23a:	99 27       	eor	r25, r25
+ 23c:	84 8f       	std	Z+28, r24	; 0x1c
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:96
+
+  *_udr = c;
+ 23e:	a6 89       	ldd	r26, Z+22	; 0x16
+ 240:	b7 89       	ldd	r27, Z+23	; 0x17
+ 242:	2c 93       	st	X, r18
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:104
+  // location". This makes sure flush() won't return until the bytes
+  // actually got written. Other r/w bits are preserved, and zeroes
+  // written to the rest.
+
+  #ifdef MPCM0
+    *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << MPCM0))) | (1 << TXC0);
+ 244:	a0 89       	ldd	r26, Z+16	; 0x10
+ 246:	b1 89       	ldd	r27, Z+17	; 0x11
+ 248:	8c 91       	ld	r24, X
+ 24a:	83 70       	andi	r24, 0x03	; 3
+ 24c:	80 64       	ori	r24, 0x40	; 64
+ 24e:	8c 93       	st	X, r24
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:109
+  #else
+    *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << TXC0)));
+  #endif
+
+  if (_tx_buffer_head == _tx_buffer_tail) {
+ 250:	93 8d       	ldd	r25, Z+27	; 0x1b
+ 252:	84 8d       	ldd	r24, Z+28	; 0x1c
+ 254:	98 13       	cpse	r25, r24
+ 256:	06 c0       	rjmp	.+12     	; 0x264 <HardwareSerial::_tx_udr_empty_irq()+0x42>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:111
+    // Buffer empty, so disable interrupts
+    *_ucsrb &= ~_BV(UDRIE0);
+ 258:	02 88       	ldd	r0, Z+18	; 0x12
+ 25a:	f3 89       	ldd	r31, Z+19	; 0x13
+ 25c:	e0 2d       	mov	r30, r0
+ 25e:	80 81       	ld	r24, Z
+ 260:	8f 7d       	andi	r24, 0xDF	; 223
+ 262:	80 83       	st	Z, r24
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:113
+  }
+}
+ 264:	08 95       	ret
+
+00000266 <HardwareSerial::write(unsigned char)>:
+_ZN14HardwareSerial5writeEh():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:223
+  // If we get here, nothing is queued anymore (DRIE is disabled) and
+  // the hardware finished tranmission (TXC is set).
+}
+
+size_t HardwareSerial::write(uint8_t c)
+{
+ 266:	ef 92       	push	r14
+ 268:	ff 92       	push	r15
+ 26a:	0f 93       	push	r16
+ 26c:	1f 93       	push	r17
+ 26e:	cf 93       	push	r28
+ 270:	df 93       	push	r29
+ 272:	ec 01       	movw	r28, r24
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:224
+  _written = true;
+ 274:	81 e0       	ldi	r24, 0x01	; 1
+ 276:	88 8f       	std	Y+24, r24	; 0x18
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:229
+  // If the buffer and the data register is empty, just write the byte
+  // to the data register and be done. This shortcut helps
+  // significantly improve the effective datarate at high (>
+  // 500kbit/s) bitrates, where interrupt overhead becomes a slowdown.
+  if (_tx_buffer_head == _tx_buffer_tail && bit_is_set(*_ucsra, UDRE0)) {
+ 278:	9b 8d       	ldd	r25, Y+27	; 0x1b
+ 27a:	8c 8d       	ldd	r24, Y+28	; 0x1c
+ 27c:	98 13       	cpse	r25, r24
+ 27e:	1a c0       	rjmp	.+52     	; 0x2b4 <HardwareSerial::write(unsigned char)+0x4e>
+ 280:	e8 89       	ldd	r30, Y+16	; 0x10
+ 282:	f9 89       	ldd	r31, Y+17	; 0x11
+ 284:	80 81       	ld	r24, Z
+ 286:	85 ff       	sbrs	r24, 5
+ 288:	15 c0       	rjmp	.+42     	; 0x2b4 <HardwareSerial::write(unsigned char)+0x4e>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:238
+    // So writing UDR must happen first.
+    // Writing UDR and clearing TC must be done atomically, otherwise
+    // interrupts might delay the TXC clear so the byte written to UDR
+    // is transmitted (setting TXC) before clearing TXC. Then TXC will
+    // be cleared when no bytes are left, causing flush() to hang
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+ 28a:	9f b7       	in	r25, 0x3f	; 63
+__iCliRetVal():
+/home/ethan/snap/arduino/85/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/atomic.h:50
+    return 1;
+}
+
+static __inline__ uint8_t __iCliRetVal(void)
+{
+    cli();
+ 28c:	f8 94       	cli
+_ZN14HardwareSerial5writeEh():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:239
+      *_udr = c;
+ 28e:	ee 89       	ldd	r30, Y+22	; 0x16
+ 290:	ff 89       	ldd	r31, Y+23	; 0x17
+ 292:	60 83       	st	Z, r22
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:241
+      #ifdef MPCM0
+        *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << MPCM0))) | (1 << TXC0);
+ 294:	e8 89       	ldd	r30, Y+16	; 0x10
+ 296:	f9 89       	ldd	r31, Y+17	; 0x11
+ 298:	80 81       	ld	r24, Z
+ 29a:	83 70       	andi	r24, 0x03	; 3
+ 29c:	80 64       	ori	r24, 0x40	; 64
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:271
+  // make atomic to prevent execution of ISR between setting the
+  // head pointer and setting the interrupt flag resulting in buffer
+  // retransmission
+  ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+    _tx_buffer_head = i;
+    *_ucsrb |= _BV(UDRIE0);
+ 29e:	80 83       	st	Z, r24
+__iRestore():
+/home/ethan/snap/arduino/85/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/atomic.h:70
+    (void)__s;
+}
+
+static __inline__ void __iRestore(const  uint8_t *__s)
+{
+    SREG = *__s;
+ 2a0:	9f bf       	out	0x3f, r25	; 63
+_ZN14HardwareSerial5writeEh():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:275
+  }
+  
+  return 1;
+}
+ 2a2:	81 e0       	ldi	r24, 0x01	; 1
+ 2a4:	90 e0       	ldi	r25, 0x00	; 0
+ 2a6:	df 91       	pop	r29
+ 2a8:	cf 91       	pop	r28
+ 2aa:	1f 91       	pop	r17
+ 2ac:	0f 91       	pop	r16
+ 2ae:	ff 90       	pop	r15
+ 2b0:	ef 90       	pop	r14
+ 2b2:	08 95       	ret
+ 2b4:	f6 2e       	mov	r15, r22
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:248
+        *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << TXC0)));
+      #endif
+    }
+    return 1;
+  }
+  tx_buffer_index_t i = (_tx_buffer_head + 1) % SERIAL_TX_BUFFER_SIZE;
+ 2b6:	0b 8d       	ldd	r16, Y+27	; 0x1b
+ 2b8:	10 e0       	ldi	r17, 0x00	; 0
+ 2ba:	0f 5f       	subi	r16, 0xFF	; 255
+ 2bc:	1f 4f       	sbci	r17, 0xFF	; 255
+ 2be:	0f 73       	andi	r16, 0x3F	; 63
+ 2c0:	11 27       	eor	r17, r17
+ 2c2:	e0 2e       	mov	r14, r16
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:252
+
+  // If the output buffer is full, there's nothing for it other than to 
+  // wait for the interrupt handler to empty it a bit
+  while (i == _tx_buffer_tail) {
+ 2c4:	8c 8d       	ldd	r24, Y+28	; 0x1c
+ 2c6:	8e 11       	cpse	r24, r14
+ 2c8:	0c c0       	rjmp	.+24     	; 0x2e2 <HardwareSerial::write(unsigned char)+0x7c>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:253
+    if (bit_is_clear(SREG, SREG_I)) {
+ 2ca:	0f b6       	in	r0, 0x3f	; 63
+ 2cc:	07 fc       	sbrc	r0, 7
+ 2ce:	fa cf       	rjmp	.-12     	; 0x2c4 <HardwareSerial::write(unsigned char)+0x5e>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:258
+      // Interrupts are disabled, so we'll have to poll the data
+      // register empty flag ourselves. If it is set, pretend an
+      // interrupt has happened and call the handler to free up
+      // space for us.
+      if(bit_is_set(*_ucsra, UDRE0))
+ 2d0:	e8 89       	ldd	r30, Y+16	; 0x10
+ 2d2:	f9 89       	ldd	r31, Y+17	; 0x11
+ 2d4:	80 81       	ld	r24, Z
+ 2d6:	85 ff       	sbrs	r24, 5
+ 2d8:	f5 cf       	rjmp	.-22     	; 0x2c4 <HardwareSerial::write(unsigned char)+0x5e>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:259
+        _tx_udr_empty_irq();
+ 2da:	ce 01       	movw	r24, r28
+ 2dc:	0e 94 11 01 	call	0x222	; 0x222 <HardwareSerial::_tx_udr_empty_irq()>
+ 2e0:	f1 cf       	rjmp	.-30     	; 0x2c4 <HardwareSerial::write(unsigned char)+0x5e>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:265
+    } else {
+      // nop, the interrupt handler will free up space for us
+    }
+  }
+
+  _tx_buffer[_tx_buffer_head] = c;
+ 2e2:	eb 8d       	ldd	r30, Y+27	; 0x1b
+ 2e4:	ec 0f       	add	r30, r28
+ 2e6:	fd 2f       	mov	r31, r29
+ 2e8:	f1 1d       	adc	r31, r1
+ 2ea:	e3 5a       	subi	r30, 0xA3	; 163
+ 2ec:	ff 4f       	sbci	r31, 0xFF	; 255
+ 2ee:	f0 82       	st	Z, r15
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:269
+  // make atomic to prevent execution of ISR between setting the
+  // head pointer and setting the interrupt flag resulting in buffer
+  // retransmission
+  ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+ 2f0:	9f b7       	in	r25, 0x3f	; 63
+__iCliRetVal():
+/home/ethan/snap/arduino/85/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/atomic.h:50
+    return 1;
+}
+
+static __inline__ uint8_t __iCliRetVal(void)
+{
+    cli();
+ 2f2:	f8 94       	cli
+_ZN14HardwareSerial5writeEh():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:270
+    _tx_buffer_head = i;
+ 2f4:	0b 8f       	std	Y+27, r16	; 0x1b
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:271
+    *_ucsrb |= _BV(UDRIE0);
+ 2f6:	ea 89       	ldd	r30, Y+18	; 0x12
+ 2f8:	fb 89       	ldd	r31, Y+19	; 0x13
+ 2fa:	80 81       	ld	r24, Z
+ 2fc:	80 62       	ori	r24, 0x20	; 32
+ 2fe:	cf cf       	rjmp	.-98     	; 0x29e <HardwareSerial::write(unsigned char)+0x38>
+
+00000300 <HardwareSerial::flush()>:
+_ZN14HardwareSerial5flushEv():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:203
+  if (head >= tail) return SERIAL_TX_BUFFER_SIZE - 1 - head + tail;
+  return tail - head - 1;
+}
+
+void HardwareSerial::flush()
+{
+ 300:	cf 93       	push	r28
+ 302:	df 93       	push	r29
+ 304:	ec 01       	movw	r28, r24
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:207
+  // If we have never written a byte, no need to flush. This special
+  // case is needed since there is no way to force the TXC (transmit
+  // complete) bit to 1 during initialization
+  if (!_written)
+ 306:	88 8d       	ldd	r24, Y+24	; 0x18
+ 308:	88 23       	and	r24, r24
+ 30a:	b9 f0       	breq	.+46     	; 0x33a <HardwareSerial::flush()+0x3a>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:210
+    return;
+
+  while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+ 30c:	aa 89       	ldd	r26, Y+18	; 0x12
+ 30e:	bb 89       	ldd	r27, Y+19	; 0x13
+ 310:	e8 89       	ldd	r30, Y+16	; 0x10
+ 312:	f9 89       	ldd	r31, Y+17	; 0x11
+ 314:	8c 91       	ld	r24, X
+ 316:	85 fd       	sbrc	r24, 5
+ 318:	03 c0       	rjmp	.+6      	; 0x320 <HardwareSerial::flush()+0x20>
+ 31a:	80 81       	ld	r24, Z
+ 31c:	86 fd       	sbrc	r24, 6
+ 31e:	0d c0       	rjmp	.+26     	; 0x33a <HardwareSerial::flush()+0x3a>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:211
+    if (bit_is_clear(SREG, SREG_I) && bit_is_set(*_ucsrb, UDRIE0))
+ 320:	0f b6       	in	r0, 0x3f	; 63
+ 322:	07 fc       	sbrc	r0, 7
+ 324:	f7 cf       	rjmp	.-18     	; 0x314 <HardwareSerial::flush()+0x14>
+ 326:	8c 91       	ld	r24, X
+ 328:	85 ff       	sbrs	r24, 5
+ 32a:	f2 cf       	rjmp	.-28     	; 0x310 <HardwareSerial::flush()+0x10>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:215
+      // Interrupts are globally disabled, but the DR empty
+      // interrupt should be enabled, so poll the DR empty flag to
+      // prevent deadlock
+      if (bit_is_set(*_ucsra, UDRE0))
+ 32c:	80 81       	ld	r24, Z
+ 32e:	85 ff       	sbrs	r24, 5
+ 330:	ed cf       	rjmp	.-38     	; 0x30c <HardwareSerial::flush()+0xc>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:216
+        _tx_udr_empty_irq();
+ 332:	ce 01       	movw	r24, r28
+ 334:	0e 94 11 01 	call	0x222	; 0x222 <HardwareSerial::_tx_udr_empty_irq()>
+ 338:	e9 cf       	rjmp	.-46     	; 0x30c <HardwareSerial::flush()+0xc>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:220
+  }
+  // If we get here, nothing is queued anymore (DRIE is disabled) and
+  // the hardware finished tranmission (TXC is set).
+}
+ 33a:	df 91       	pop	r29
+ 33c:	cf 91       	pop	r28
+ 33e:	08 95       	ret
+
+00000340 <Serial0_available()>:
+_Z17Serial0_availablev():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial0.cpp:76
+#endif
+
+// Function that can be weakly referenced by serialEventRun to prevent
+// pulling in this file if it's not otherwise used.
+bool Serial0_available() {
+  return Serial.available();
+ 340:	89 e6       	ldi	r24, 0x69	; 105
+ 342:	91 e0       	ldi	r25, 0x01	; 1
+ 344:	0e 94 05 01 	call	0x20a	; 0x20a <HardwareSerial::available()>
+ 348:	21 e0       	ldi	r18, 0x01	; 1
+ 34a:	89 2b       	or	r24, r25
+ 34c:	09 f4       	brne	.+2      	; 0x350 <Serial0_available()+0x10>
+ 34e:	20 e0       	ldi	r18, 0x00	; 0
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial0.cpp:77
+}
+ 350:	82 2f       	mov	r24, r18
+ 352:	08 95       	ret
+
+00000354 <serialEventRun()>:
+_Z14serialEventRunv():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:67
+#endif
+
+void serialEventRun(void)
+{
+#if defined(HAVE_HWSERIAL0)
+  if (Serial0_available && serialEvent && Serial0_available()) serialEvent();
+ 354:	80 e0       	ldi	r24, 0x00	; 0
+ 356:	90 e0       	ldi	r25, 0x00	; 0
+ 358:	89 2b       	or	r24, r25
+ 35a:	29 f0       	breq	.+10     	; 0x366 <serialEventRun()+0x12>
+ 35c:	0e 94 a0 01 	call	0x340	; 0x340 <Serial0_available()>
+ 360:	81 11       	cpse	r24, r1
+ 362:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:78
+  if (Serial2_available && serialEvent2 && Serial2_available()) serialEvent2();
+#endif
+#if defined(HAVE_HWSERIAL3)
+  if (Serial3_available && serialEvent3 && Serial3_available()) serialEvent3();
+#endif
+}
+ 366:	08 95       	ret
+
+00000368 <Print::write(unsigned char const*, unsigned int)>:
+_ZN5Print5writeEPKhj():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/Print.cpp:35
+
+// Public Methods //////////////////////////////////////////////////////////////
+
+/* default implementation: may be overridden */
+size_t Print::write(const uint8_t *buffer, size_t size)
+{
+ 368:	af 92       	push	r10
+ 36a:	bf 92       	push	r11
+ 36c:	cf 92       	push	r12
+ 36e:	df 92       	push	r13
+ 370:	ef 92       	push	r14
+ 372:	ff 92       	push	r15
+ 374:	0f 93       	push	r16
+ 376:	1f 93       	push	r17
+ 378:	cf 93       	push	r28
+ 37a:	df 93       	push	r29
+ 37c:	6c 01       	movw	r12, r24
+ 37e:	7b 01       	movw	r14, r22
+ 380:	8b 01       	movw	r16, r22
+ 382:	04 0f       	add	r16, r20
+ 384:	15 1f       	adc	r17, r21
+ 386:	eb 01       	movw	r28, r22
+ 388:	5e 01       	movw	r10, r28
+ 38a:	ae 18       	sub	r10, r14
+ 38c:	bf 08       	sbc	r11, r15
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/Print.cpp:37
+  size_t n = 0;
+  while (size--) {
+ 38e:	c0 17       	cp	r28, r16
+ 390:	d1 07       	cpc	r29, r17
+ 392:	59 f0       	breq	.+22     	; 0x3aa <Print::write(unsigned char const*, unsigned int)+0x42>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/Print.cpp:38
+    if (write(*buffer++)) n++;
+ 394:	69 91       	ld	r22, Y+
+ 396:	d6 01       	movw	r26, r12
+ 398:	ed 91       	ld	r30, X+
+ 39a:	fc 91       	ld	r31, X
+ 39c:	01 90       	ld	r0, Z+
+ 39e:	f0 81       	ld	r31, Z
+ 3a0:	e0 2d       	mov	r30, r0
+ 3a2:	c6 01       	movw	r24, r12
+ 3a4:	09 95       	icall
+ 3a6:	89 2b       	or	r24, r25
+ 3a8:	79 f7       	brne	.-34     	; 0x388 <Print::write(unsigned char const*, unsigned int)+0x20>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/Print.cpp:42
+    else break;
+  }
+  return n;
+}
+ 3aa:	c5 01       	movw	r24, r10
+ 3ac:	df 91       	pop	r29
+ 3ae:	cf 91       	pop	r28
+ 3b0:	1f 91       	pop	r17
+ 3b2:	0f 91       	pop	r16
+ 3b4:	ff 90       	pop	r15
+ 3b6:	ef 90       	pop	r14
+ 3b8:	df 90       	pop	r13
+ 3ba:	cf 90       	pop	r12
+ 3bc:	bf 90       	pop	r11
+ 3be:	af 90       	pop	r10
+ 3c0:	08 95       	ret
+
+000003c2 <micros>:
+micros():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:229
+  SREG = oldSREG;
+
+  return m;
+}
+
+unsigned long micros() {
+ 3c2:	cf 92       	push	r12
+ 3c4:	df 92       	push	r13
+ 3c6:	ef 92       	push	r14
+ 3c8:	ff 92       	push	r15
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:237
+  unsigned char f; // temporary storage for millis fraction counter
+  unsigned char q = 0; // record whether an overflow is flagged
+#endif
+  // t will be the number where the timer0 counter stopped
+  uint8_t t;
+  uint8_t oldSREG = SREG;
+ 3ca:	6f b7       	in	r22, 0x3f	; 63
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:240
+
+  // Stop all interrupts
+  cli();
+ 3cc:	f8 94       	cli
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:244
+
+#ifdef CORRECT_EXACT_MICROS
+  // combine exact millisec and 8usec counters
+  m = timer0_millis;
+ 3ce:	80 91 65 01 	lds	r24, 0x0165	; 0x800165 <timer0_millis>
+ 3d2:	90 91 66 01 	lds	r25, 0x0166	; 0x800166 <timer0_millis+0x1>
+ 3d6:	a0 91 67 01 	lds	r26, 0x0167	; 0x800167 <timer0_millis+0x2>
+ 3da:	b0 91 68 01 	lds	r27, 0x0168	; 0x800168 <timer0_millis+0x3>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:245
+  f = timer0_fract;
+ 3de:	50 91 64 01 	lds	r21, 0x0164	; 0x800164 <timer0_fract>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:252
+  m = timer0_overflow_count;
+#endif
+
+  // TCNT0 : The Timer Counter Register
+#if defined(TCNT0)
+  t = TCNT0;
+ 3e2:	26 b5       	in	r18, 0x26	; 38
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:261
+  #error TIMER 0 not defined
+#endif
+
+  // Timer0 Interrupt Flag Register
+#ifdef TIFR0
+  if ((TIFR0 & _BV(TOV0)) && (t < 255))
+ 3e4:	35 b3       	in	r19, 0x15	; 21
+ 3e6:	43 2f       	mov	r20, r19
+ 3e8:	41 70       	andi	r20, 0x01	; 1
+ 3ea:	30 ff       	sbrs	r19, 0
+ 3ec:	04 c0       	rjmp	.+8      	; 0x3f6 <micros+0x34>
+ 3ee:	41 e0       	ldi	r20, 0x01	; 1
+ 3f0:	2f 3f       	cpi	r18, 0xFF	; 255
+ 3f2:	09 f4       	brne	.+2      	; 0x3f6 <micros+0x34>
+ 3f4:	40 e0       	ldi	r20, 0x00	; 0
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:276
+#else
+    q = 1;
+#endif
+#endif
+  // Restore SREG
+  SREG = oldSREG;
+ 3f6:	6f bf       	out	0x3f, r22	; 63
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:286
+     Basically we multiply by 1000 and add the scaled timer.
+
+     The leading part by m and f is long-term accurate.
+     For the timer we just need to be close from below.
+     Must never be too high, or micros jumps backwards. */
+  m = (((m << 7) - (m << 1) - m + f) << 3) +
+ 3f8:	6c 01       	movw	r12, r24
+ 3fa:	7d 01       	movw	r14, r26
+ 3fc:	37 e0       	ldi	r19, 0x07	; 7
+ 3fe:	cc 0c       	add	r12, r12
+ 400:	dd 1c       	adc	r13, r13
+ 402:	ee 1c       	adc	r14, r14
+ 404:	ff 1c       	adc	r15, r15
+ 406:	3a 95       	dec	r19
+ 408:	d1 f7       	brne	.-12     	; 0x3fe <micros+0x3c>
+ 40a:	c5 0e       	add	r12, r21
+ 40c:	d1 1c       	adc	r13, r1
+ 40e:	e1 1c       	adc	r14, r1
+ 410:	f1 1c       	adc	r15, r1
+ 412:	c8 1a       	sub	r12, r24
+ 414:	d9 0a       	sbc	r13, r25
+ 416:	ea 0a       	sbc	r14, r26
+ 418:	fb 0a       	sbc	r15, r27
+ 41a:	88 0f       	add	r24, r24
+ 41c:	99 1f       	adc	r25, r25
+ 41e:	aa 1f       	adc	r26, r26
+ 420:	bb 1f       	adc	r27, r27
+ 422:	c8 1a       	sub	r12, r24
+ 424:	d9 0a       	sbc	r13, r25
+ 426:	ea 0a       	sbc	r14, r26
+ 428:	fb 0a       	sbc	r15, r27
+ 42a:	63 e0       	ldi	r22, 0x03	; 3
+ 42c:	cc 0c       	add	r12, r12
+ 42e:	dd 1c       	adc	r13, r13
+ 430:	ee 1c       	adc	r14, r14
+ 432:	ff 1c       	adc	r15, r15
+ 434:	6a 95       	dec	r22
+ 436:	d1 f7       	brne	.-12     	; 0x42c <__LOCK_REGION_LENGTH__+0x2c>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:287
+      ((t * MICROSECONDS_PER_TIMER0_OVERFLOW) >> 8);
+ 438:	30 e0       	ldi	r19, 0x00	; 0
+ 43a:	a9 ec       	ldi	r26, 0xC9	; 201
+ 43c:	b5 e0       	ldi	r27, 0x05	; 5
+ 43e:	0e 94 00 05 	call	0xa00	; 0xa00 <__umulhisi3>
+ 442:	67 2f       	mov	r22, r23
+ 444:	78 2f       	mov	r23, r24
+ 446:	89 2f       	mov	r24, r25
+ 448:	99 27       	eor	r25, r25
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:286
+     Basically we multiply by 1000 and add the scaled timer.
+
+     The leading part by m and f is long-term accurate.
+     For the timer we just need to be close from below.
+     Must never be too high, or micros jumps backwards. */
+  m = (((m << 7) - (m << 1) - m + f) << 3) +
+ 44a:	6c 0d       	add	r22, r12
+ 44c:	7d 1d       	adc	r23, r13
+ 44e:	8e 1d       	adc	r24, r14
+ 450:	9f 1d       	adc	r25, r15
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:288
+      ((t * MICROSECONDS_PER_TIMER0_OVERFLOW) >> 8);
+  return q ? m + MICROSECONDS_PER_TIMER0_OVERFLOW : m;
+ 452:	44 23       	and	r20, r20
+ 454:	21 f0       	breq	.+8      	; 0x45e <__LOCK_REGION_LENGTH__+0x5e>
+ 456:	67 53       	subi	r22, 0x37	; 55
+ 458:	7a 4f       	sbci	r23, 0xFA	; 250
+ 45a:	8f 4f       	sbci	r24, 0xFF	; 255
+ 45c:	9f 4f       	sbci	r25, 0xFF	; 255
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:393
+  // m & t are multiplied by 4 (since it was already multiplied by 256)
+  // t is multiplied by 4
+  return ((m << 8) + t) * (64 / clockCyclesPerMicrosecond());
+#endif
+#endif // 0
+}
+ 45e:	ff 90       	pop	r15
+ 460:	ef 90       	pop	r14
+ 462:	df 90       	pop	r13
+ 464:	cf 90       	pop	r12
+ 466:	08 95       	ret
+
+00000468 <delay.constprop.5>:
+delay.constprop.5():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:395
+
+void delay(unsigned long ms)
+ 468:	8f 92       	push	r8
+ 46a:	9f 92       	push	r9
+ 46c:	af 92       	push	r10
+ 46e:	bf 92       	push	r11
+ 470:	cf 92       	push	r12
+ 472:	df 92       	push	r13
+ 474:	ef 92       	push	r14
+ 476:	ff 92       	push	r15
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:397
+{
+  unsigned long start = micros();
+ 478:	0e 94 e1 01 	call	0x3c2	; 0x3c2 <micros>
+ 47c:	4b 01       	movw	r8, r22
+ 47e:	5c 01       	movw	r10, r24
+ 480:	84 e6       	ldi	r24, 0x64	; 100
+ 482:	c8 2e       	mov	r12, r24
+ 484:	d1 2c       	mov	r13, r1
+ 486:	e1 2c       	mov	r14, r1
+ 488:	f1 2c       	mov	r15, r1
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:401
+
+  while (ms > 0UL) {
+    yield();
+    while (ms > 0UL && (micros() - start) >= 1000UL) {
+ 48a:	0e 94 e1 01 	call	0x3c2	; 0x3c2 <micros>
+ 48e:	68 19       	sub	r22, r8
+ 490:	79 09       	sbc	r23, r9
+ 492:	8a 09       	sbc	r24, r10
+ 494:	9b 09       	sbc	r25, r11
+ 496:	68 3e       	cpi	r22, 0xE8	; 232
+ 498:	73 40       	sbci	r23, 0x03	; 3
+ 49a:	81 05       	cpc	r24, r1
+ 49c:	91 05       	cpc	r25, r1
+ 49e:	a8 f3       	brcs	.-22     	; 0x48a <delay.constprop.5+0x22>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:402
+      ms--;
+ 4a0:	21 e0       	ldi	r18, 0x01	; 1
+ 4a2:	c2 1a       	sub	r12, r18
+ 4a4:	d1 08       	sbc	r13, r1
+ 4a6:	e1 08       	sbc	r14, r1
+ 4a8:	f1 08       	sbc	r15, r1
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:403
+      start += 1000UL;
+ 4aa:	88 ee       	ldi	r24, 0xE8	; 232
+ 4ac:	88 0e       	add	r8, r24
+ 4ae:	83 e0       	ldi	r24, 0x03	; 3
+ 4b0:	98 1e       	adc	r9, r24
+ 4b2:	a1 1c       	adc	r10, r1
+ 4b4:	b1 1c       	adc	r11, r1
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:401
+{
+  unsigned long start = micros();
+
+  while (ms > 0UL) {
+    yield();
+    while (ms > 0UL && (micros() - start) >= 1000UL) {
+ 4b6:	c1 14       	cp	r12, r1
+ 4b8:	d1 04       	cpc	r13, r1
+ 4ba:	e1 04       	cpc	r14, r1
+ 4bc:	f1 04       	cpc	r15, r1
+ 4be:	29 f7       	brne	.-54     	; 0x48a <delay.constprop.5+0x22>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:406
+      ms--;
+      start += 1000UL;
+    }
+  }
+}
+ 4c0:	ff 90       	pop	r15
+ 4c2:	ef 90       	pop	r14
+ 4c4:	df 90       	pop	r13
+ 4c6:	cf 90       	pop	r12
+ 4c8:	bf 90       	pop	r11
+ 4ca:	af 90       	pop	r10
+ 4cc:	9f 90       	pop	r9
+ 4ce:	8f 90       	pop	r8
+ 4d0:	08 95       	ret
+
+000004d2 <twi_stop>:
+twi_stop():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:436
+ * Output   none
+ */
+void twi_stop(void)
+{
+  // send stop condition
+  TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTO);
+ 4d2:	85 ed       	ldi	r24, 0xD5	; 213
+ 4d4:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:456
+          return;
+        }
+      }
+    }
+  #else
+    while(TWCR & _BV(TWSTO)){
+ 4d8:	80 91 bc 00 	lds	r24, 0x00BC	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
+ 4dc:	84 fd       	sbrc	r24, 4
+ 4de:	fc cf       	rjmp	.-8      	; 0x4d8 <twi_stop+0x6>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:462
+      continue;
+    }
+  #endif
+
+  // update twi state
+  twi_state = TWI_READY;
+ 4e0:	10 92 5d 01 	sts	0x015D, r1	; 0x80015d <twi_state>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:463
+}
+ 4e4:	08 95       	ret
+
+000004e6 <twi_transmit>:
+twi_transmit():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:371
+uint8_t twi_transmit(const uint8_t* data, uint8_t length)
+{
+  uint8_t i;
+
+  // ensure data will fit into buffer
+  if(TWI_BUFFER_SIZE < (twi_txBufferLength+length)){
+ 4e6:	20 91 39 01 	lds	r18, 0x0139	; 0x800139 <twi_txBufferLength>
+ 4ea:	26 0f       	add	r18, r22
+ 4ec:	33 27       	eor	r19, r19
+ 4ee:	33 1f       	adc	r19, r19
+ 4f0:	21 32       	cpi	r18, 0x21	; 33
+ 4f2:	31 05       	cpc	r19, r1
+ 4f4:	ec f4       	brge	.+58     	; 0x530 <twi_transmit+0x4a>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:376
+    return 1;
+  }
+
+  // ensure we are currently a slave transmitter
+  if(TWI_STX != twi_state){
+ 4f6:	20 91 5d 01 	lds	r18, 0x015D	; 0x80015d <twi_state>
+ 4fa:	fc 01       	movw	r30, r24
+ 4fc:	90 e0       	ldi	r25, 0x00	; 0
+ 4fe:	80 e0       	ldi	r24, 0x00	; 0
+ 500:	24 30       	cpi	r18, 0x04	; 4
+ 502:	69 f0       	breq	.+26     	; 0x51e <twi_transmit+0x38>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:377
+    return 2;
+ 504:	82 e0       	ldi	r24, 0x02	; 2
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:387
+    twi_txBuffer[twi_txBufferLength+i] = data[i];
+  }
+  twi_txBufferLength += length;
+
+  return 0;
+}
+ 506:	08 95       	ret
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:382
+    return 2;
+  }
+
+  // set length and copy data into tx buffer
+  for(i = 0; i < length; ++i){
+    twi_txBuffer[twi_txBufferLength+i] = data[i];
+ 508:	a0 91 39 01 	lds	r26, 0x0139	; 0x800139 <twi_txBufferLength>
+ 50c:	21 91       	ld	r18, Z+
+ 50e:	ac 01       	movw	r20, r24
+ 510:	47 5e       	subi	r20, 0xE7	; 231
+ 512:	5e 4f       	sbci	r21, 0xFE	; 254
+ 514:	a4 0f       	add	r26, r20
+ 516:	b5 2f       	mov	r27, r21
+ 518:	b1 1d       	adc	r27, r1
+ 51a:	2c 93       	st	X, r18
+ 51c:	01 96       	adiw	r24, 0x01	; 1
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:381
+  if(TWI_STX != twi_state){
+    return 2;
+  }
+
+  // set length and copy data into tx buffer
+  for(i = 0; i < length; ++i){
+ 51e:	86 17       	cp	r24, r22
+ 520:	98 f3       	brcs	.-26     	; 0x508 <twi_transmit+0x22>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:384
+    twi_txBuffer[twi_txBufferLength+i] = data[i];
+  }
+  twi_txBufferLength += length;
+ 522:	80 91 39 01 	lds	r24, 0x0139	; 0x800139 <twi_txBufferLength>
+ 526:	68 0f       	add	r22, r24
+ 528:	60 93 39 01 	sts	0x0139, r22	; 0x800139 <twi_txBufferLength>
+ 52c:	80 e0       	ldi	r24, 0x00	; 0
+ 52e:	08 95       	ret
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:372
+{
+  uint8_t i;
+
+  // ensure data will fit into buffer
+  if(TWI_BUFFER_SIZE < (twi_txBufferLength+length)){
+    return 1;
+ 530:	81 e0       	ldi	r24, 0x01	; 1
+ 532:	08 95       	ret
+
+00000534 <TwoWire::flush()>:
+_ZN7TwoWire5flushEv():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/Wire.cpp:326
+}
+
+void TwoWire::flush(void)
+{
+  // XXX: to be implemented.
+}
+ 534:	08 95       	ret
+
+00000536 <TwoWire::peek()>:
+_ZN7TwoWire4peekEv():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/Wire.cpp:321
+  if(rxBufferIndex < rxBufferLength){
+    value = rxBuffer[rxBufferIndex];
+  }
+
+  return value;
+}
+ 536:	8f ef       	ldi	r24, 0xFF	; 255
+ 538:	9f ef       	ldi	r25, 0xFF	; 255
+ 53a:	08 95       	ret
+
+0000053c <TwoWire::read()>:
+_ZN7TwoWire4readEv():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/Wire.cpp:307
+    value = rxBuffer[rxBufferIndex];
+    ++rxBufferIndex;
+  }
+
+  return value;
+}
+ 53c:	8f ef       	ldi	r24, 0xFF	; 255
+ 53e:	9f ef       	ldi	r25, 0xFF	; 255
+ 540:	08 95       	ret
+
+00000542 <TwoWire::available()>:
+_ZN7TwoWire9availableEv():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/Wire.cpp:290
+// must be called in:
+// slave rx event callback
+// or after requestFrom(address, numBytes)
+int TwoWire::available(void)
+{
+  return rxBufferLength - rxBufferIndex;
+ 542:	80 91 18 01 	lds	r24, 0x0118	; 0x800118 <TwoWire::rxBufferIndex>
+ 546:	90 e0       	ldi	r25, 0x00	; 0
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/Wire.cpp:291
+}
+ 548:	91 95       	neg	r25
+ 54a:	81 95       	neg	r24
+ 54c:	91 09       	sbc	r25, r1
+ 54e:	08 95       	ret
+
+00000550 <TwoWire::write(unsigned char const*, unsigned int)>:
+_ZN7TwoWire5writeEPKhj():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/Wire.cpp:271
+
+// must be called in:
+// slave tx event callback
+// or after beginTransmission(address)
+size_t TwoWire::write(const uint8_t *data, size_t quantity)
+{
+ 550:	cf 93       	push	r28
+ 552:	df 93       	push	r29
+ 554:	cb 01       	movw	r24, r22
+ 556:	ea 01       	movw	r28, r20
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/Wire.cpp:280
+      write(data[i]);
+    }
+  }else{
+  // in slave send mode
+    // reply to master
+    twi_transmit(data, quantity);
+ 558:	64 2f       	mov	r22, r20
+ 55a:	0e 94 73 02 	call	0x4e6	; 0x4e6 <twi_transmit>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/Wire.cpp:283
+  }
+  return quantity;
+}
+ 55e:	ce 01       	movw	r24, r28
+ 560:	df 91       	pop	r29
+ 562:	cf 91       	pop	r28
+ 564:	08 95       	ret
+
+00000566 <TwoWire::write(unsigned char)>:
+_ZN7TwoWire5writeEh():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/Wire.cpp:246
+
+// must be called in:
+// slave tx event callback
+// or after beginTransmission(address)
+size_t TwoWire::write(uint8_t data)
+{
+ 566:	cf 93       	push	r28
+ 568:	df 93       	push	r29
+ 56a:	1f 92       	push	r1
+ 56c:	cd b7       	in	r28, 0x3d	; 61
+ 56e:	de b7       	in	r29, 0x3e	; 62
+ 570:	69 83       	std	Y+1, r22	; 0x01
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/Wire.cpp:262
+    // update amount in buffer
+    txBufferLength = txBufferIndex;
+  }else{
+  // in slave send mode
+    // reply to master
+    twi_transmit(&data, 1);
+ 572:	61 e0       	ldi	r22, 0x01	; 1
+ 574:	ce 01       	movw	r24, r28
+ 576:	01 96       	adiw	r24, 0x01	; 1
+ 578:	0e 94 73 02 	call	0x4e6	; 0x4e6 <twi_transmit>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/Wire.cpp:265
+  }
+  return 1;
+}
+ 57c:	81 e0       	ldi	r24, 0x01	; 1
+ 57e:	90 e0       	ldi	r25, 0x00	; 0
+ 580:	0f 90       	pop	r0
+ 582:	df 91       	pop	r29
+ 584:	cf 91       	pop	r28
+ 586:	08 95       	ret
+
+00000588 <Print::availableForWrite()>:
+_ZN5Print17availableForWriteEv():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/Print.h:63
+      return write((const uint8_t *)buffer, size);
+    }
+
+    // default to zero, meaning "a single write may block"
+    // should be overriden by subclasses with buffering
+    virtual int availableForWrite() { return 0; }
+ 588:	90 e0       	ldi	r25, 0x00	; 0
+ 58a:	80 e0       	ldi	r24, 0x00	; 0
+ 58c:	08 95       	ret
+
+0000058e <__vector_19>:
+__vector_19():
+#elif defined(USART0_UDRE_vect)
+ISR(USART0_UDRE_vect)
+#else
+  #error "Don't know what the Data Register Empty vector is called for Serial"
+#endif
+{
+ 58e:	1f 92       	push	r1
+ 590:	0f 92       	push	r0
+ 592:	0f b6       	in	r0, 0x3f	; 63
+ 594:	0f 92       	push	r0
+ 596:	11 24       	eor	r1, r1
+ 598:	2f 93       	push	r18
+ 59a:	3f 93       	push	r19
+ 59c:	4f 93       	push	r20
+ 59e:	5f 93       	push	r21
+ 5a0:	6f 93       	push	r22
+ 5a2:	7f 93       	push	r23
+ 5a4:	8f 93       	push	r24
+ 5a6:	9f 93       	push	r25
+ 5a8:	af 93       	push	r26
+ 5aa:	bf 93       	push	r27
+ 5ac:	ef 93       	push	r30
+ 5ae:	ff 93       	push	r31
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial0.cpp:64
+  Serial._tx_udr_empty_irq();
+ 5b0:	89 e6       	ldi	r24, 0x69	; 105
+ 5b2:	91 e0       	ldi	r25, 0x01	; 1
+ 5b4:	0e 94 11 01 	call	0x222	; 0x222 <HardwareSerial::_tx_udr_empty_irq()>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial0.cpp:65
+}
+ 5b8:	ff 91       	pop	r31
+ 5ba:	ef 91       	pop	r30
+ 5bc:	bf 91       	pop	r27
+ 5be:	af 91       	pop	r26
+ 5c0:	9f 91       	pop	r25
+ 5c2:	8f 91       	pop	r24
+ 5c4:	7f 91       	pop	r23
+ 5c6:	6f 91       	pop	r22
+ 5c8:	5f 91       	pop	r21
+ 5ca:	4f 91       	pop	r20
+ 5cc:	3f 91       	pop	r19
+ 5ce:	2f 91       	pop	r18
+ 5d0:	0f 90       	pop	r0
+ 5d2:	0f be       	out	0x3f, r0	; 63
+ 5d4:	0f 90       	pop	r0
+ 5d6:	1f 90       	pop	r1
+ 5d8:	18 95       	reti
+
+000005da <__vector_18>:
+__vector_18():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial0.cpp:50
+#elif defined(USART_RX_vect)
+  ISR(USART_RX_vect)
+#else
+  #error "Don't know what the Data Received vector is called for Serial"
+#endif
+  {
+ 5da:	1f 92       	push	r1
+ 5dc:	0f 92       	push	r0
+ 5de:	0f b6       	in	r0, 0x3f	; 63
+ 5e0:	0f 92       	push	r0
+ 5e2:	11 24       	eor	r1, r1
+ 5e4:	2f 93       	push	r18
+ 5e6:	8f 93       	push	r24
+ 5e8:	9f 93       	push	r25
+ 5ea:	ef 93       	push	r30
+ 5ec:	ff 93       	push	r31
+_rx_complete_irq():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial_private.h:100
+
+// Actual interrupt handlers //////////////////////////////////////////////////////////////
+
+void HardwareSerial::_rx_complete_irq(void)
+{
+  if (bit_is_clear(*_ucsra, UPE0)) {
+ 5ee:	e0 91 79 01 	lds	r30, 0x0179	; 0x800179 <Serial+0x10>
+ 5f2:	f0 91 7a 01 	lds	r31, 0x017A	; 0x80017a <Serial+0x11>
+ 5f6:	80 81       	ld	r24, Z
+ 5f8:	e0 91 7f 01 	lds	r30, 0x017F	; 0x80017f <Serial+0x16>
+ 5fc:	f0 91 80 01 	lds	r31, 0x0180	; 0x800180 <Serial+0x17>
+ 600:	82 fd       	sbrc	r24, 2
+ 602:	1b c0       	rjmp	.+54     	; 0x63a <__vector_18+0x60>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial_private.h:103
+    // No Parity error, read byte and store it in the buffer if there is
+    // room
+    unsigned char c = *_udr;
+ 604:	90 81       	ld	r25, Z
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial_private.h:104
+    rx_buffer_index_t i = (unsigned int)(_rx_buffer_head + 1) % SERIAL_RX_BUFFER_SIZE;
+ 606:	80 91 82 01 	lds	r24, 0x0182	; 0x800182 <Serial+0x19>
+ 60a:	8f 5f       	subi	r24, 0xFF	; 255
+ 60c:	8f 73       	andi	r24, 0x3F	; 63
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial_private.h:110
+
+    // if we should be storing the received character into the location
+    // just before the tail (meaning that the head would advance to the
+    // current location of the tail), we're about to overflow the buffer
+    // and so we don't write the character or advance the head.
+    if (i != _rx_buffer_tail) {
+ 60e:	20 91 83 01 	lds	r18, 0x0183	; 0x800183 <Serial+0x1a>
+ 612:	82 17       	cp	r24, r18
+ 614:	41 f0       	breq	.+16     	; 0x626 <__vector_18+0x4c>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial_private.h:111
+      _rx_buffer[_rx_buffer_head] = c;
+ 616:	e0 91 82 01 	lds	r30, 0x0182	; 0x800182 <Serial+0x19>
+ 61a:	f0 e0       	ldi	r31, 0x00	; 0
+ 61c:	e7 59       	subi	r30, 0x97	; 151
+ 61e:	fe 4f       	sbci	r31, 0xFE	; 254
+ 620:	95 8f       	std	Z+29, r25	; 0x1d
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial_private.h:112
+      _rx_buffer_head = i;
+ 622:	80 93 82 01 	sts	0x0182, r24	; 0x800182 <Serial+0x19>
+__vector_18():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial0.cpp:52
+    Serial._rx_complete_irq();
+  }
+ 626:	ff 91       	pop	r31
+ 628:	ef 91       	pop	r30
+ 62a:	9f 91       	pop	r25
+ 62c:	8f 91       	pop	r24
+ 62e:	2f 91       	pop	r18
+ 630:	0f 90       	pop	r0
+ 632:	0f be       	out	0x3f, r0	; 63
+ 634:	0f 90       	pop	r0
+ 636:	1f 90       	pop	r1
+ 638:	18 95       	reti
+_rx_complete_irq():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial_private.h:116
+    }
+  } else {
+    // Parity error, read byte but discard it
+    *_udr;
+ 63a:	80 81       	ld	r24, Z
+ 63c:	f4 cf       	rjmp	.-24     	; 0x626 <__vector_18+0x4c>
+
+0000063e <__vector_16>:
+__vector_16():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:159
+#if defined(__AVR_ATtiny24__) || defined(__AVR_ATtiny44__) || defined(__AVR_ATtiny84__)
+ISR(TIM0_OVF_vect)
+#else
+ISR(TIMER0_OVF_vect)
+#endif
+{
+ 63e:	1f 92       	push	r1
+ 640:	0f 92       	push	r0
+ 642:	0f b6       	in	r0, 0x3f	; 63
+ 644:	0f 92       	push	r0
+ 646:	11 24       	eor	r1, r1
+ 648:	4f 93       	push	r20
+ 64a:	5f 93       	push	r21
+ 64c:	6f 93       	push	r22
+ 64e:	7f 93       	push	r23
+ 650:	8f 93       	push	r24
+ 652:	9f 93       	push	r25
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:167
+  static unsigned char timer0_exact = 0;
+#endif
+
+  // copy these to local variables so they can be stored in registers
+  // (volatile variables must be read from memory on every access, so this saves time)
+  unsigned long m = timer0_millis;
+ 654:	40 91 65 01 	lds	r20, 0x0165	; 0x800165 <timer0_millis>
+ 658:	50 91 66 01 	lds	r21, 0x0166	; 0x800166 <timer0_millis+0x1>
+ 65c:	60 91 67 01 	lds	r22, 0x0167	; 0x800167 <timer0_millis+0x2>
+ 660:	70 91 68 01 	lds	r23, 0x0168	; 0x800168 <timer0_millis+0x3>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:168
+  unsigned char f = timer0_fract;
+ 664:	80 91 64 01 	lds	r24, 0x0164	; 0x800164 <timer0_fract>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:174
+
+  f += FRACT_INC FRACT_INC_PLUS;
+
+#ifdef CORRECT_EXACT_MILLIS
+  // correct millis () to be exact for certain clocks
+  if (timer0_exact == CORRECT_ROLL - 1) {
+ 668:	90 91 63 01 	lds	r25, 0x0163	; 0x800163 <timer0_exact.2342>
+ 66c:	9a 31       	cpi	r25, 0x1A	; 26
+ 66e:	19 f5       	brne	.+70     	; 0x6b6 <__vector_16+0x78>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:175
+    timer0_exact = 0;
+ 670:	10 92 63 01 	sts	0x0163, r1	; 0x800163 <timer0_exact.2342>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:194
+  if (timer0_exact & 1) {
+    ++f;
+  }
+#endif
+#ifdef CORRECT_BRUTE
+  if (timer0_exact < CORRECT_BRUTE) {
+ 674:	90 91 63 01 	lds	r25, 0x0163	; 0x800163 <timer0_exact.2342>
+ 678:	95 30       	cpi	r25, 0x05	; 5
+ 67a:	08 f1       	brcs	.+66     	; 0x6be <__vector_16+0x80>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:170
+  // copy these to local variables so they can be stored in registers
+  // (volatile variables must be read from memory on every access, so this saves time)
+  unsigned long m = timer0_millis;
+  unsigned char f = timer0_fract;
+
+  f += FRACT_INC FRACT_INC_PLUS;
+ 67c:	84 5c       	subi	r24, 0xC4	; 196
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:200
+    ++f;
+  }
+#endif
+#endif // CORRECT_EXACT_MILLIS
+
+  if (f >= FRACT_MAX) {
+ 67e:	8d 37       	cpi	r24, 0x7D	; 125
+ 680:	00 f1       	brcs	.+64     	; 0x6c2 <__vector_16+0x84>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:201
+    f -= FRACT_MAX;
+ 682:	8d 57       	subi	r24, 0x7D	; 125
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:202
+    m += MILLIS_INC + 1;
+ 684:	4e 5f       	subi	r20, 0xFE	; 254
+ 686:	5f 4f       	sbci	r21, 0xFF	; 255
+ 688:	6f 4f       	sbci	r22, 0xFF	; 255
+ 68a:	7f 4f       	sbci	r23, 0xFF	; 255
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:208
+  }
+  else {
+    m += MILLIS_INC;
+  }
+
+  timer0_fract = f;
+ 68c:	80 93 64 01 	sts	0x0164, r24	; 0x800164 <timer0_fract>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:209
+  timer0_millis = m;
+ 690:	40 93 65 01 	sts	0x0165, r20	; 0x800165 <timer0_millis>
+ 694:	50 93 66 01 	sts	0x0166, r21	; 0x800166 <timer0_millis+0x1>
+ 698:	60 93 67 01 	sts	0x0167, r22	; 0x800167 <timer0_millis+0x2>
+ 69c:	70 93 68 01 	sts	0x0168, r23	; 0x800168 <timer0_millis+0x3>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:213
+#ifndef CORRECT_EXACT_MICROS
+  timer0_overflow_count++;
+#endif
+}
+ 6a0:	9f 91       	pop	r25
+ 6a2:	8f 91       	pop	r24
+ 6a4:	7f 91       	pop	r23
+ 6a6:	6f 91       	pop	r22
+ 6a8:	5f 91       	pop	r21
+ 6aa:	4f 91       	pop	r20
+ 6ac:	0f 90       	pop	r0
+ 6ae:	0f be       	out	0x3f, r0	; 63
+ 6b0:	0f 90       	pop	r0
+ 6b2:	1f 90       	pop	r1
+ 6b4:	18 95       	reti
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:181
+#ifdef CORRECT_LO
+    ++f;
+#endif
+  }
+  else {
+    ++timer0_exact;
+ 6b6:	9f 5f       	subi	r25, 0xFF	; 255
+ 6b8:	90 93 63 01 	sts	0x0163, r25	; 0x800163 <timer0_exact.2342>
+ 6bc:	db cf       	rjmp	.-74     	; 0x674 <__vector_16+0x36>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:195
+    ++f;
+  }
+#endif
+#ifdef CORRECT_BRUTE
+  if (timer0_exact < CORRECT_BRUTE) {
+    ++f;
+ 6be:	83 5c       	subi	r24, 0xC3	; 195
+ 6c0:	de cf       	rjmp	.-68     	; 0x67e <__vector_16+0x40>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:205
+  if (f >= FRACT_MAX) {
+    f -= FRACT_MAX;
+    m += MILLIS_INC + 1;
+  }
+  else {
+    m += MILLIS_INC;
+ 6c2:	4f 5f       	subi	r20, 0xFF	; 255
+ 6c4:	5f 4f       	sbci	r21, 0xFF	; 255
+ 6c6:	6f 4f       	sbci	r22, 0xFF	; 255
+ 6c8:	7f 4f       	sbci	r23, 0xFF	; 255
+ 6ca:	e0 cf       	rjmp	.-64     	; 0x68c <__vector_16+0x4e>
+
+000006cc <__vector_24>:
+__vector_24():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:534
+  }
+  return(flag);
+}
+
+ISR(TWI_vect)
+{
+ 6cc:	1f 92       	push	r1
+ 6ce:	0f 92       	push	r0
+ 6d0:	0f b6       	in	r0, 0x3f	; 63
+ 6d2:	0f 92       	push	r0
+ 6d4:	11 24       	eor	r1, r1
+ 6d6:	2f 93       	push	r18
+ 6d8:	3f 93       	push	r19
+ 6da:	4f 93       	push	r20
+ 6dc:	5f 93       	push	r21
+ 6de:	6f 93       	push	r22
+ 6e0:	7f 93       	push	r23
+ 6e2:	8f 93       	push	r24
+ 6e4:	9f 93       	push	r25
+ 6e6:	af 93       	push	r26
+ 6e8:	bf 93       	push	r27
+ 6ea:	ef 93       	push	r30
+ 6ec:	ff 93       	push	r31
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:535
+  switch(TW_STATUS){
+ 6ee:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__DATA_REGION_ORIGIN__+0x59>
+ 6f2:	88 7f       	andi	r24, 0xF8	; 248
+ 6f4:	80 36       	cpi	r24, 0x60	; 96
+ 6f6:	09 f4       	brne	.+2      	; 0x6fa <__vector_24+0x2e>
+ 6f8:	4a c0       	rjmp	.+148    	; 0x78e <__vector_24+0xc2>
+ 6fa:	f0 f5       	brcc	.+124    	; 0x778 <__vector_24+0xac>
+ 6fc:	88 32       	cpi	r24, 0x28	; 40
+ 6fe:	09 f4       	brne	.+2      	; 0x702 <__vector_24+0x36>
+ 700:	a5 c0       	rjmp	.+330    	; 0x84c <__vector_24+0x180>
+ 702:	18 f5       	brcc	.+70     	; 0x74a <__vector_24+0x7e>
+ 704:	80 31       	cpi	r24, 0x10	; 16
+ 706:	09 f4       	brne	.+2      	; 0x70a <__vector_24+0x3e>
+ 708:	99 c0       	rjmp	.+306    	; 0x83c <__vector_24+0x170>
+ 70a:	b8 f4       	brcc	.+46     	; 0x73a <__vector_24+0x6e>
+ 70c:	88 23       	and	r24, r24
+ 70e:	09 f4       	brne	.+2      	; 0x712 <__vector_24+0x46>
+ 710:	ef c0       	rjmp	.+478    	; 0x8f0 <__vector_24+0x224>
+ 712:	88 30       	cpi	r24, 0x08	; 8
+ 714:	09 f4       	brne	.+2      	; 0x718 <__vector_24+0x4c>
+ 716:	92 c0       	rjmp	.+292    	; 0x83c <__vector_24+0x170>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:696
+    case TW_BUS_ERROR: // bus error, illegal stop/start
+      twi_error = TW_BUS_ERROR;
+      twi_stop();
+      break;
+  }
+}
+ 718:	ff 91       	pop	r31
+ 71a:	ef 91       	pop	r30
+ 71c:	bf 91       	pop	r27
+ 71e:	af 91       	pop	r26
+ 720:	9f 91       	pop	r25
+ 722:	8f 91       	pop	r24
+ 724:	7f 91       	pop	r23
+ 726:	6f 91       	pop	r22
+ 728:	5f 91       	pop	r21
+ 72a:	4f 91       	pop	r20
+ 72c:	3f 91       	pop	r19
+ 72e:	2f 91       	pop	r18
+ 730:	0f 90       	pop	r0
+ 732:	0f be       	out	0x3f, r0	; 63
+ 734:	0f 90       	pop	r0
+ 736:	1f 90       	pop	r1
+ 738:	18 95       	reti
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:535
+  return(flag);
+}
+
+ISR(TWI_vect)
+{
+  switch(TW_STATUS){
+ 73a:	88 31       	cpi	r24, 0x18	; 24
+ 73c:	09 f4       	brne	.+2      	; 0x740 <__vector_24+0x74>
+ 73e:	86 c0       	rjmp	.+268    	; 0x84c <__vector_24+0x180>
+ 740:	80 32       	cpi	r24, 0x20	; 32
+ 742:	51 f7       	brne	.-44     	; 0x718 <__vector_24+0x4c>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:570
+    case TW_MT_SLA_NACK:  // address sent, nack received
+      twi_error = TW_MT_SLA_NACK;
+      twi_stop();
+      break;
+    case TW_MT_DATA_NACK: // data sent, nack received
+      twi_error = TW_MT_DATA_NACK;
+ 744:	80 93 5c 01 	sts	0x015C, r24	; 0x80015c <twi_error>
+ 748:	14 c0       	rjmp	.+40     	; 0x772 <__vector_24+0xa6>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:535
+  return(flag);
+}
+
+ISR(TWI_vect)
+{
+  switch(TW_STATUS){
+ 74a:	80 34       	cpi	r24, 0x40	; 64
+ 74c:	09 f4       	brne	.+2      	; 0x750 <__vector_24+0x84>
+ 74e:	97 c0       	rjmp	.+302    	; 0x87e <__vector_24+0x1b2>
+ 750:	40 f4       	brcc	.+16     	; 0x762 <__vector_24+0x96>
+ 752:	80 33       	cpi	r24, 0x30	; 48
+ 754:	b9 f3       	breq	.-18     	; 0x744 <__vector_24+0x78>
+ 756:	88 33       	cpi	r24, 0x38	; 56
+ 758:	f9 f6       	brne	.-66     	; 0x718 <__vector_24+0x4c>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:574
+    case TW_MT_DATA_NACK: // data sent, nack received
+      twi_error = TW_MT_DATA_NACK;
+      twi_stop();
+      break;
+    case TW_MT_ARB_LOST: // lost bus arbitration
+      twi_error = TW_MT_ARB_LOST;
+ 75a:	80 93 5c 01 	sts	0x015C, r24	; 0x80015c <twi_error>
+twi_reply():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:421
+ */
+void twi_reply(uint8_t ack)
+{
+  // transmit master read ready signal, with or without ack
+  if(ack){
+    TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWINT) | _BV(TWEA);
+ 75e:	85 ec       	ldi	r24, 0xC5	; 197
+ 760:	a8 c0       	rjmp	.+336    	; 0x8b2 <__vector_24+0x1e6>
+__vector_24():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:535
+  return(flag);
+}
+
+ISR(TWI_vect)
+{
+  switch(TW_STATUS){
+ 762:	80 35       	cpi	r24, 0x50	; 80
+ 764:	09 f4       	brne	.+2      	; 0x768 <__vector_24+0x9c>
+ 766:	81 c0       	rjmp	.+258    	; 0x86a <__vector_24+0x19e>
+ 768:	88 35       	cpi	r24, 0x58	; 88
+ 76a:	09 f4       	brne	.+2      	; 0x76e <__vector_24+0xa2>
+ 76c:	90 c0       	rjmp	.+288    	; 0x88e <__vector_24+0x1c2>
+ 76e:	88 34       	cpi	r24, 0x48	; 72
+ 770:	99 f6       	brne	.-90     	; 0x718 <__vector_24+0x4c>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:693
+    // All
+    case TW_NO_INFO:   // no state information
+      break;
+    case TW_BUS_ERROR: // bus error, illegal stop/start
+      twi_error = TW_BUS_ERROR;
+      twi_stop();
+ 772:	0e 94 69 02 	call	0x4d2	; 0x4d2 <twi_stop>
+ 776:	d0 cf       	rjmp	.-96     	; 0x718 <__vector_24+0x4c>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:535
+  return(flag);
+}
+
+ISR(TWI_vect)
+{
+  switch(TW_STATUS){
+ 778:	88 39       	cpi	r24, 0x98	; 152
+ 77a:	09 f4       	brne	.+2      	; 0x77e <__vector_24+0xb2>
+ 77c:	86 c0       	rjmp	.+268    	; 0x88a <__vector_24+0x1be>
+ 77e:	38 f5       	brcc	.+78     	; 0x7ce <__vector_24+0x102>
+ 780:	88 37       	cpi	r24, 0x78	; 120
+ 782:	29 f0       	breq	.+10     	; 0x78e <__vector_24+0xc2>
+ 784:	50 f4       	brcc	.+20     	; 0x79a <__vector_24+0xce>
+ 786:	88 36       	cpi	r24, 0x68	; 104
+ 788:	11 f0       	breq	.+4      	; 0x78e <__vector_24+0xc2>
+ 78a:	80 37       	cpi	r24, 0x70	; 112
+ 78c:	29 f6       	brne	.-118    	; 0x718 <__vector_24+0x4c>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:616
+    case TW_SR_SLA_ACK:   // addressed, returned ack
+    case TW_SR_GCALL_ACK: // addressed generally, returned ack
+    case TW_SR_ARB_LOST_SLA_ACK:   // lost arbitration, returned ack
+    case TW_SR_ARB_LOST_GCALL_ACK: // lost arbitration, returned ack
+      // enter slave receiver mode
+      twi_state = TWI_SRX;
+ 78e:	83 e0       	ldi	r24, 0x03	; 3
+ 790:	80 93 5d 01 	sts	0x015D, r24	; 0x80015d <twi_state>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:618
+      // indicate that rx buffer can be overwritten and ack
+      twi_rxBufferIndex = 0;
+ 794:	10 92 5b 01 	sts	0x015B, r1	; 0x80015b <twi_rxBufferIndex>
+ 798:	55 c0       	rjmp	.+170    	; 0x844 <__vector_24+0x178>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:535
+  return(flag);
+}
+
+ISR(TWI_vect)
+{
+  switch(TW_STATUS){
+ 79a:	88 38       	cpi	r24, 0x88	; 136
+ 79c:	09 f4       	brne	.+2      	; 0x7a0 <__vector_24+0xd4>
+ 79e:	75 c0       	rjmp	.+234    	; 0x88a <__vector_24+0x1be>
+ 7a0:	80 39       	cpi	r24, 0x90	; 144
+ 7a2:	19 f0       	breq	.+6      	; 0x7aa <__vector_24+0xde>
+ 7a4:	80 38       	cpi	r24, 0x80	; 128
+ 7a6:	09 f0       	breq	.+2      	; 0x7aa <__vector_24+0xde>
+ 7a8:	b7 cf       	rjmp	.-146    	; 0x718 <__vector_24+0x4c>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:624
+      twi_reply(1);
+      break;
+    case TW_SR_DATA_ACK:       // data received, returned ack
+    case TW_SR_GCALL_DATA_ACK: // data received generally, returned ack
+      // if there is still room in the rx buffer
+      if(twi_rxBufferIndex < TWI_BUFFER_SIZE){
+ 7aa:	80 91 5b 01 	lds	r24, 0x015B	; 0x80015b <twi_rxBufferIndex>
+ 7ae:	80 32       	cpi	r24, 0x20	; 32
+ 7b0:	08 f0       	brcs	.+2      	; 0x7b4 <__vector_24+0xe8>
+ 7b2:	6b c0       	rjmp	.+214    	; 0x88a <__vector_24+0x1be>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:626
+        // put byte in buffer and ack
+        twi_rxBuffer[twi_rxBufferIndex++] = TWDR;
+ 7b4:	e0 91 5b 01 	lds	r30, 0x015B	; 0x80015b <twi_rxBufferIndex>
+ 7b8:	81 e0       	ldi	r24, 0x01	; 1
+ 7ba:	8e 0f       	add	r24, r30
+ 7bc:	80 93 5b 01 	sts	0x015B, r24	; 0x80015b <twi_rxBufferIndex>
+ 7c0:	80 91 bb 00 	lds	r24, 0x00BB	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
+ 7c4:	f0 e0       	ldi	r31, 0x00	; 0
+ 7c6:	e5 5c       	subi	r30, 0xC5	; 197
+ 7c8:	fe 4f       	sbci	r31, 0xFE	; 254
+ 7ca:	80 83       	st	Z, r24
+ 7cc:	3b c0       	rjmp	.+118    	; 0x844 <__vector_24+0x178>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:535
+  return(flag);
+}
+
+ISR(TWI_vect)
+{
+  switch(TW_STATUS){
+ 7ce:	80 3b       	cpi	r24, 0xB0	; 176
+ 7d0:	39 f0       	breq	.+14     	; 0x7e0 <__vector_24+0x114>
+ 7d2:	d0 f4       	brcc	.+52     	; 0x808 <__vector_24+0x13c>
+ 7d4:	80 3a       	cpi	r24, 0xA0	; 160
+ 7d6:	09 f4       	brne	.+2      	; 0x7da <__vector_24+0x10e>
+ 7d8:	71 c0       	rjmp	.+226    	; 0x8bc <__vector_24+0x1f0>
+ 7da:	88 3a       	cpi	r24, 0xA8	; 168
+ 7dc:	09 f0       	breq	.+2      	; 0x7e0 <__vector_24+0x114>
+ 7de:	9c cf       	rjmp	.-200    	; 0x718 <__vector_24+0x4c>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:655
+
+    // Slave Transmitter
+    case TW_ST_SLA_ACK:          // addressed, returned ack
+    case TW_ST_ARB_LOST_SLA_ACK: // arbitration lost, returned ack
+      // enter slave transmitter mode
+      twi_state = TWI_STX;
+ 7e0:	84 e0       	ldi	r24, 0x04	; 4
+ 7e2:	80 93 5d 01 	sts	0x015D, r24	; 0x80015d <twi_state>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:657
+      // ready the tx buffer index for iteration
+      twi_txBufferIndex = 0;
+ 7e6:	10 92 3a 01 	sts	0x013A, r1	; 0x80013a <twi_txBufferIndex>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:659
+      // set tx buffer length to be zero, to verify if user changes it
+      twi_txBufferLength = 0;
+ 7ea:	10 92 39 01 	sts	0x0139, r1	; 0x800139 <twi_txBufferLength>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:662
+      // request for txBuffer to be filled and length to be set
+      // note: user must call twi_transmit(bytes, length) to do this
+      twi_onSlaveTransmit();
+ 7ee:	f0 e0       	ldi	r31, 0x00	; 0
+ 7f0:	e0 e0       	ldi	r30, 0x00	; 0
+ 7f2:	09 95       	icall
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:664
+      // if they didn't change buffer & length, initialize it
+      if(0 == twi_txBufferLength){
+ 7f4:	80 91 39 01 	lds	r24, 0x0139	; 0x800139 <twi_txBufferLength>
+ 7f8:	81 11       	cpse	r24, r1
+ 7fa:	0f c0       	rjmp	.+30     	; 0x81a <__vector_24+0x14e>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:665
+        twi_txBufferLength = 1;
+ 7fc:	81 e0       	ldi	r24, 0x01	; 1
+ 7fe:	80 93 39 01 	sts	0x0139, r24	; 0x800139 <twi_txBufferLength>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:666
+        twi_txBuffer[0] = 0x00;
+ 802:	10 92 19 01 	sts	0x0119, r1	; 0x800119 <twi_txBuffer>
+ 806:	09 c0       	rjmp	.+18     	; 0x81a <__vector_24+0x14e>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:535
+  return(flag);
+}
+
+ISR(TWI_vect)
+{
+  switch(TW_STATUS){
+ 808:	80 3c       	cpi	r24, 0xC0	; 192
+ 80a:	09 f4       	brne	.+2      	; 0x80e <__vector_24+0x142>
+ 80c:	a8 cf       	rjmp	.-176    	; 0x75e <__vector_24+0x92>
+ 80e:	88 3c       	cpi	r24, 0xC8	; 200
+ 810:	09 f4       	brne	.+2      	; 0x814 <__vector_24+0x148>
+ 812:	a5 cf       	rjmp	.-182    	; 0x75e <__vector_24+0x92>
+ 814:	88 3b       	cpi	r24, 0xB8	; 184
+ 816:	09 f0       	breq	.+2      	; 0x81a <__vector_24+0x14e>
+ 818:	7f cf       	rjmp	.-258    	; 0x718 <__vector_24+0x4c>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:672
+      }
+      // transmit first byte from buffer, fall
+      /* fall through */
+    case TW_ST_DATA_ACK: // byte sent, ack returned
+      // copy data to output register
+      TWDR = twi_txBuffer[twi_txBufferIndex++];
+ 81a:	e0 91 3a 01 	lds	r30, 0x013A	; 0x80013a <twi_txBufferIndex>
+ 81e:	81 e0       	ldi	r24, 0x01	; 1
+ 820:	8e 0f       	add	r24, r30
+ 822:	80 93 3a 01 	sts	0x013A, r24	; 0x80013a <twi_txBufferIndex>
+ 826:	f0 e0       	ldi	r31, 0x00	; 0
+ 828:	e7 5e       	subi	r30, 0xE7	; 231
+ 82a:	fe 4f       	sbci	r31, 0xFE	; 254
+ 82c:	80 81       	ld	r24, Z
+ 82e:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:674
+      // if there is more to send, ack, otherwise nack
+      if(twi_txBufferIndex < twi_txBufferLength){
+ 832:	90 91 3a 01 	lds	r25, 0x013A	; 0x80013a <twi_txBufferIndex>
+ 836:	80 91 39 01 	lds	r24, 0x0139	; 0x800139 <twi_txBufferLength>
+ 83a:	25 c0       	rjmp	.+74     	; 0x886 <__vector_24+0x1ba>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:540
+  switch(TW_STATUS){
+    // All Master
+    case TW_START:     // sent start condition
+    case TW_REP_START: // sent repeated start condition
+      // copy device address and r/w bit to output register and ack
+      TWDR = twi_slarw;
+ 83c:	80 91 62 01 	lds	r24, 0x0162	; 0x800162 <twi_slarw>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:550
+    case TW_MT_SLA_ACK:  // slave receiver acked address
+    case TW_MT_DATA_ACK: // slave receiver acked data
+      // if there is data to send, send it, otherwise stop
+      if(twi_masterBufferIndex < twi_masterBufferLength){
+        // copy data to output register and ack
+        TWDR = twi_masterBuffer[twi_masterBufferIndex++];
+ 840:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
+twi_reply():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:421
+ */
+void twi_reply(uint8_t ack)
+{
+  // transmit master read ready signal, with or without ack
+  if(ack){
+    TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWINT) | _BV(TWEA);
+ 844:	85 ec       	ldi	r24, 0xC5	; 197
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:423
+  }else{
+    TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWINT);
+ 846:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
+ 84a:	66 cf       	rjmp	.-308    	; 0x718 <__vector_24+0x4c>
+__vector_24():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:548
+
+    // Master Transmitter
+    case TW_MT_SLA_ACK:  // slave receiver acked address
+    case TW_MT_DATA_ACK: // slave receiver acked data
+      // if there is data to send, send it, otherwise stop
+      if(twi_masterBufferIndex < twi_masterBufferLength){
+ 84c:	90 91 61 01 	lds	r25, 0x0161	; 0x800161 <twi_masterBufferIndex>
+ 850:	80 91 60 01 	lds	r24, 0x0160	; 0x800160 <twi_masterBufferLength>
+ 854:	98 17       	cp	r25, r24
+ 856:	28 f5       	brcc	.+74     	; 0x8a2 <__vector_24+0x1d6>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:550
+        // copy data to output register and ack
+        TWDR = twi_masterBuffer[twi_masterBufferIndex++];
+ 858:	e0 91 61 01 	lds	r30, 0x0161	; 0x800161 <twi_masterBufferIndex>
+ 85c:	81 e0       	ldi	r24, 0x01	; 1
+ 85e:	8e 0f       	add	r24, r30
+ 860:	80 93 61 01 	sts	0x0161, r24	; 0x800161 <twi_masterBufferIndex>
+ 864:	f0 e0       	ldi	r31, 0x00	; 0
+ 866:	80 81       	ld	r24, Z
+ 868:	eb cf       	rjmp	.-42     	; 0x840 <__vector_24+0x174>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:581
+      break;
+
+    // Master Receiver
+    case TW_MR_DATA_ACK: // data received, ack sent
+      // put byte into buffer
+      twi_masterBuffer[twi_masterBufferIndex++] = TWDR;
+ 86a:	e0 91 61 01 	lds	r30, 0x0161	; 0x800161 <twi_masterBufferIndex>
+ 86e:	81 e0       	ldi	r24, 0x01	; 1
+ 870:	8e 0f       	add	r24, r30
+ 872:	80 93 61 01 	sts	0x0161, r24	; 0x800161 <twi_masterBufferIndex>
+ 876:	80 91 bb 00 	lds	r24, 0x00BB	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
+ 87a:	f0 e0       	ldi	r31, 0x00	; 0
+ 87c:	80 83       	st	Z, r24
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:585
+      /* fall through */
+    case TW_MR_SLA_ACK:  // address sent, ack received
+      // ack if more bytes are expected, otherwise nack
+      if(twi_masterBufferIndex < twi_masterBufferLength){
+ 87e:	90 91 61 01 	lds	r25, 0x0161	; 0x800161 <twi_masterBufferIndex>
+ 882:	80 91 60 01 	lds	r24, 0x0160	; 0x800160 <twi_masterBufferLength>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:674
+      /* fall through */
+    case TW_ST_DATA_ACK: // byte sent, ack returned
+      // copy data to output register
+      TWDR = twi_txBuffer[twi_txBufferIndex++];
+      // if there is more to send, ack, otherwise nack
+      if(twi_txBufferIndex < twi_txBufferLength){
+ 886:	98 17       	cp	r25, r24
+ 888:	e8 f2       	brcs	.-70     	; 0x844 <__vector_24+0x178>
+twi_reply():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:423
+{
+  // transmit master read ready signal, with or without ack
+  if(ack){
+    TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWINT) | _BV(TWEA);
+  }else{
+    TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWINT);
+ 88a:	85 e8       	ldi	r24, 0x85	; 133
+ 88c:	dc cf       	rjmp	.-72     	; 0x846 <__vector_24+0x17a>
+__vector_24():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:593
+        twi_reply(0);
+      }
+      break;
+    case TW_MR_DATA_NACK: // data received, nack sent
+      // put final byte into buffer
+      twi_masterBuffer[twi_masterBufferIndex++] = TWDR;
+ 88e:	e0 91 61 01 	lds	r30, 0x0161	; 0x800161 <twi_masterBufferIndex>
+ 892:	81 e0       	ldi	r24, 0x01	; 1
+ 894:	8e 0f       	add	r24, r30
+ 896:	80 93 61 01 	sts	0x0161, r24	; 0x800161 <twi_masterBufferIndex>
+ 89a:	80 91 bb 00 	lds	r24, 0x00BB	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
+ 89e:	f0 e0       	ldi	r31, 0x00	; 0
+ 8a0:	80 83       	st	Z, r24
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:594
+  if (twi_sendStop)
+ 8a2:	80 91 5f 01 	lds	r24, 0x015F	; 0x80015f <twi_sendStop>
+ 8a6:	81 11       	cpse	r24, r1
+ 8a8:	64 cf       	rjmp	.-312    	; 0x772 <__vector_24+0xa6>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:597
+          twi_stop();
+  else {
+    twi_inRepStart = true;  // we're going to send the START
+ 8aa:	81 e0       	ldi	r24, 0x01	; 1
+ 8ac:	80 93 5e 01 	sts	0x015E, r24	; 0x80015e <twi_inRepStart>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:601
+    // don't enable the interrupt. We'll generate the start, but we
+    // avoid handling the interrupt until we're in the next transaction,
+    // at the point where we would normally issue the start.
+    TWCR = _BV(TWINT) | _BV(TWSTA)| _BV(TWEN) ;
+ 8b0:	84 ea       	ldi	r24, 0xA4	; 164
+twi_reply():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:421
+ */
+void twi_reply(uint8_t ack)
+{
+  // transmit master read ready signal, with or without ack
+  if(ack){
+    TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWINT) | _BV(TWEA);
+ 8b2:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
+__vector_24():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:685
+    case TW_ST_DATA_NACK: // received nack, we are done
+    case TW_ST_LAST_DATA: // received ack, but we are done already!
+      // ack future responses
+      twi_reply(1);
+      // leave slave receiver state
+      twi_state = TWI_READY;
+ 8b6:	10 92 5d 01 	sts	0x015D, r1	; 0x80015d <twi_state>
+ 8ba:	2e cf       	rjmp	.-420    	; 0x718 <__vector_24+0x4c>
+twi_releaseBus():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:474
+ * Output   none
+ */
+void twi_releaseBus(void)
+{
+  // release bus
+  TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWEA) | _BV(TWINT);
+ 8bc:	85 ec       	ldi	r24, 0xC5	; 197
+ 8be:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:477
+
+  // update twi state
+  twi_state = TWI_READY;
+ 8c2:	10 92 5d 01 	sts	0x015D, r1	; 0x80015d <twi_state>
+__vector_24():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:637
+      break;
+    case TW_SR_STOP: // stop or repeated start condition received
+      // ack future responses and leave slave receiver state
+      twi_releaseBus();
+      // put a null char after data if there's room
+      if(twi_rxBufferIndex < TWI_BUFFER_SIZE){
+ 8c6:	80 91 5b 01 	lds	r24, 0x015B	; 0x80015b <twi_rxBufferIndex>
+ 8ca:	80 32       	cpi	r24, 0x20	; 32
+ 8cc:	30 f4       	brcc	.+12     	; 0x8da <__vector_24+0x20e>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:638
+        twi_rxBuffer[twi_rxBufferIndex] = '\0';
+ 8ce:	e0 91 5b 01 	lds	r30, 0x015B	; 0x80015b <twi_rxBufferIndex>
+ 8d2:	f0 e0       	ldi	r31, 0x00	; 0
+ 8d4:	e5 5c       	subi	r30, 0xC5	; 197
+ 8d6:	fe 4f       	sbci	r31, 0xFE	; 254
+ 8d8:	10 82       	st	Z, r1
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:641
+      }
+      // callback to user defined callback
+      twi_onSlaveReceive(twi_rxBuffer, twi_rxBufferIndex);
+ 8da:	60 91 5b 01 	lds	r22, 0x015B	; 0x80015b <twi_rxBufferIndex>
+ 8de:	70 e0       	ldi	r23, 0x00	; 0
+ 8e0:	8b e3       	ldi	r24, 0x3B	; 59
+ 8e2:	91 e0       	ldi	r25, 0x01	; 1
+ 8e4:	f0 e0       	ldi	r31, 0x00	; 0
+ 8e6:	e0 e0       	ldi	r30, 0x00	; 0
+ 8e8:	09 95       	icall
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:643
+      // since we submit rx buffer to "wire" library, we can reset it
+      twi_rxBufferIndex = 0;
+ 8ea:	10 92 5b 01 	sts	0x015B, r1	; 0x80015b <twi_rxBufferIndex>
+ 8ee:	14 cf       	rjmp	.-472    	; 0x718 <__vector_24+0x4c>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/libraries/Wire/src/utility/twi.c:692
+
+    // All
+    case TW_NO_INFO:   // no state information
+      break;
+    case TW_BUS_ERROR: // bus error, illegal stop/start
+      twi_error = TW_BUS_ERROR;
+ 8f0:	10 92 5c 01 	sts	0x015C, r1	; 0x80015c <twi_error>
+ 8f4:	3e cf       	rjmp	.-388    	; 0x772 <__vector_24+0xa6>
+
+000008f6 <global constructors keyed to 65535_0_AfriCube_Power_supply_v1.ino.cpp.o.1896>:
+_GLOBAL__I_65535_0_AfriCube_Power_supply_v1.ino.cpp.o.1896():
+ 8f6:	e9 e6       	ldi	r30, 0x69	; 105
+ 8f8:	f1 e0       	ldi	r31, 0x01	; 1
+ 8fa:	13 82       	std	Z+3, r1	; 0x03
+ 8fc:	12 82       	std	Z+2, r1	; 0x02
+ 8fe:	88 ee       	ldi	r24, 0xE8	; 232
+ 900:	93 e0       	ldi	r25, 0x03	; 3
+ 902:	a0 e0       	ldi	r26, 0x00	; 0
+ 904:	b0 e0       	ldi	r27, 0x00	; 0
+ 906:	84 83       	std	Z+4, r24	; 0x04
+ 908:	95 83       	std	Z+5, r25	; 0x05
+ 90a:	a6 83       	std	Z+6, r26	; 0x06
+ 90c:	b7 83       	std	Z+7, r27	; 0x07
+ 90e:	84 e0       	ldi	r24, 0x04	; 4
+ 910:	91 e0       	ldi	r25, 0x01	; 1
+ 912:	91 83       	std	Z+1, r25	; 0x01
+ 914:	80 83       	st	Z, r24
+ 916:	85 ec       	ldi	r24, 0xC5	; 197
+ 918:	90 e0       	ldi	r25, 0x00	; 0
+ 91a:	95 87       	std	Z+13, r25	; 0x0d
+ 91c:	84 87       	std	Z+12, r24	; 0x0c
+ 91e:	84 ec       	ldi	r24, 0xC4	; 196
+ 920:	90 e0       	ldi	r25, 0x00	; 0
+ 922:	97 87       	std	Z+15, r25	; 0x0f
+ 924:	86 87       	std	Z+14, r24	; 0x0e
+ 926:	80 ec       	ldi	r24, 0xC0	; 192
+ 928:	90 e0       	ldi	r25, 0x00	; 0
+ 92a:	91 8b       	std	Z+17, r25	; 0x11
+ 92c:	80 8b       	std	Z+16, r24	; 0x10
+ 92e:	81 ec       	ldi	r24, 0xC1	; 193
+ 930:	90 e0       	ldi	r25, 0x00	; 0
+ 932:	93 8b       	std	Z+19, r25	; 0x13
+ 934:	82 8b       	std	Z+18, r24	; 0x12
+ 936:	82 ec       	ldi	r24, 0xC2	; 194
+ 938:	90 e0       	ldi	r25, 0x00	; 0
+ 93a:	95 8b       	std	Z+21, r25	; 0x15
+ 93c:	84 8b       	std	Z+20, r24	; 0x14
+ 93e:	86 ec       	ldi	r24, 0xC6	; 198
+ 940:	90 e0       	ldi	r25, 0x00	; 0
+ 942:	97 8b       	std	Z+23, r25	; 0x17
+ 944:	86 8b       	std	Z+22, r24	; 0x16
+ 946:	11 8e       	std	Z+25, r1	; 0x19
+ 948:	12 8e       	std	Z+26, r1	; 0x1a
+ 94a:	13 8e       	std	Z+27, r1	; 0x1b
+ 94c:	14 8e       	std	Z+28, r1	; 0x1c
+ 94e:	08 95       	ret
+
+00000950 <main>:
+main():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:945
+
+void init()
+{
+  // this needs to be called before setup() or some functions won't
+  // work there
+  sei();
+ 950:	78 94       	sei
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:957
+
+  // On the ATmega168, timer 0 is also used for fast hardware pwm
+  // (using phase-correct PWM would mean that timer 0 overflowed half as often
+  // resulting in different millis() behavior on the ATmega8 and ATmega168)
+#if defined(TCCR0A) && defined(WGM01)
+  TCCR0A |= _BV(WGM01) | _BV(WGM00);
+ 952:	84 b5       	in	r24, 0x24	; 36
+ 954:	83 60       	ori	r24, 0x03	; 3
+ 956:	84 bd       	out	0x24, r24	; 36
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:972
+  #if defined(WGM00) && defined(WGM01) // The ATmega8 doesn't have WGM00 and WGM01
+    TCCR0 |= _BV(WGM01) | _BV(WGM00);
+  #endif
+#elif defined(TCCR0B) && defined(CS01) && defined(CS00)
+  // This combination is for the standard 168/328/640/1280/1281/2560/2561
+  TCCR0B |= _BV(CS01) | _BV(CS00);
+ 958:	85 b5       	in	r24, 0x25	; 37
+ 95a:	83 60       	ori	r24, 0x03	; 3
+ 95c:	85 bd       	out	0x25, r24	; 37
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:984
+
+// Enable timer 0 overflow interrupt
+#if defined(TIMSK) && defined(TOIE0)
+  TIMSK |= _BV(TOIE0);
+#elif defined(TIMSK0) && defined(TOIE0)
+  TIMSK0 |= _BV(TOIE0);
+ 95e:	80 91 6e 00 	lds	r24, 0x006E	; 0x80006e <__DATA_REGION_ORIGIN__+0xe>
+ 962:	81 60       	ori	r24, 0x01	; 1
+ 964:	80 93 6e 00 	sts	0x006E, r24	; 0x80006e <__DATA_REGION_ORIGIN__+0xe>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:995
+// this is better for motors as it ensures an even waveform
+// note, however, that fast pwm mode can achieve a frequency of up
+// 8 MHz (with a 16 MHz clock) at 50% duty cycle
+
+#if defined(TCCR1B) && defined(CS11) && defined(CS10)
+  TCCR1B = _BV(CS11); // Set timer 1 prescale factor to 64
+ 968:	82 e0       	ldi	r24, 0x02	; 2
+ 96a:	80 93 81 00 	sts	0x0081, r24	; 0x800081 <__DATA_REGION_ORIGIN__+0x21>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:997
+#if F_CPU >= 8000000L
+  TCCR1B |= _BV(CS10);
+ 96e:	80 91 81 00 	lds	r24, 0x0081	; 0x800081 <__DATA_REGION_ORIGIN__+0x21>
+ 972:	81 60       	ori	r24, 0x01	; 1
+ 974:	80 93 81 00 	sts	0x0081, r24	; 0x800081 <__DATA_REGION_ORIGIN__+0x21>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:1006
+#if F_CPU >= 8000000L
+  TCCR1 |= _BV(CS10);
+#endif
+#endif
+#if defined(TCCR1A) && defined(WGM10)
+  TCCR1A |= _BV(WGM10); // Put timer 1 in 8-bit phase correct pwm mode
+ 978:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 97c:	81 60       	ori	r24, 0x01	; 1
+ 97e:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:1013
+
+// Set timer 2 prescale factor to 64
+#if defined(TCCR2) && defined(CS22)
+  TCCR2 |= _BV(CS22);
+#elif defined(TCCR2B) && defined(CS22)
+  TCCR2B |= _BV(CS22);
+ 982:	80 91 b1 00 	lds	r24, 0x00B1	; 0x8000b1 <__DATA_REGION_ORIGIN__+0x51>
+ 986:	84 60       	ori	r24, 0x04	; 4
+ 988:	80 93 b1 00 	sts	0x00B1, r24	; 0x8000b1 <__DATA_REGION_ORIGIN__+0x51>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:1022
+
+// Configure timer 2 for phase correct pwm (8-bit)
+#if defined(TCCR2) && defined(WGM20)
+  TCCR2 |= _BV(WGM20);
+#elif defined(TCCR2A) && defined(WGM20)
+  TCCR2A |= _BV(WGM20);
+ 98c:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 990:	81 60       	ori	r24, 0x01	; 1
+ 992:	80 93 b0 00 	sts	0x00B0, r24	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:1052
+#if defined(ADCSRA)
+  // set a2d prescaler so we are inside the desired 50-200 KHz range.
+  #if F_CPU >= 16000000 // 16 MHz / 128 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADPS1) | _BV(ADPS0) | _BV(ADEN);
+  #elif F_CPU >= 8000000 // 8 MHz / 64 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADPS1) | _BV(ADEN);
+ 996:	86 e8       	ldi	r24, 0x86	; 134
+ 998:	80 93 7a 00 	sts	0x007A, r24	; 0x80007a <__DATA_REGION_ORIGIN__+0x1a>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring.c:1070
+  // here so they can be used as normal digital i/o; they will be
+  // reconnected in Serial.begin()
+#if defined(UCSRB)
+  UCSRB = 0;
+#elif defined(UCSR0B)
+  UCSR0B = 0;
+ 99c:	10 92 c1 00 	sts	0x00C1, r1	; 0x8000c1 <__DATA_REGION_ORIGIN__+0x61>
+pinMode():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:31
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+  uint8_t bit = digitalPinToBitMask(pin);
+ 9a0:	e3 e9       	ldi	r30, 0x93	; 147
+ 9a2:	f0 e0       	ldi	r31, 0x00	; 0
+ 9a4:	24 91       	lpm	r18, Z
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:32
+  uint8_t port = digitalPinToPort(pin);
+ 9a6:	ec e7       	ldi	r30, 0x7C	; 124
+ 9a8:	f0 e0       	ldi	r31, 0x00	; 0
+ 9aa:	84 91       	lpm	r24, Z
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:35
+  volatile uint8_t *reg, *out;
+
+  if (port == NOT_A_PIN) return;
+ 9ac:	88 23       	and	r24, r24
+ 9ae:	99 f0       	breq	.+38     	; 0x9d6 <main+0x86>
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:38
+
+  // JWS: can I let the optimizer do this?
+  reg = portModeRegister(port);
+ 9b0:	90 e0       	ldi	r25, 0x00	; 0
+ 9b2:	88 0f       	add	r24, r24
+ 9b4:	99 1f       	adc	r25, r25
+ 9b6:	fc 01       	movw	r30, r24
+ 9b8:	e8 59       	subi	r30, 0x98	; 152
+ 9ba:	ff 4f       	sbci	r31, 0xFF	; 255
+ 9bc:	a5 91       	lpm	r26, Z+
+ 9be:	b4 91       	lpm	r27, Z
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:39
+  out = portOutputRegister(port);
+ 9c0:	fc 01       	movw	r30, r24
+ 9c2:	ee 58       	subi	r30, 0x8E	; 142
+ 9c4:	ff 4f       	sbci	r31, 0xFF	; 255
+ 9c6:	85 91       	lpm	r24, Z+
+ 9c8:	94 91       	lpm	r25, Z
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:54
+    cli();
+    *reg &= ~bit;
+    *out |= bit;
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+ 9ca:	8f b7       	in	r24, 0x3f	; 63
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:55
+    cli();
+ 9cc:	f8 94       	cli
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:56
+    *reg |= bit;
+ 9ce:	ec 91       	ld	r30, X
+ 9d0:	e2 2b       	or	r30, r18
+ 9d2:	ec 93       	st	X, r30
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/wiring_digital.c:57
+    SREG = oldSREG;
+ 9d4:	8f bf       	out	0x3f, r24	; 63
+serialEventRun():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:67
+#endif
+
+void serialEventRun(void)
+{
+#if defined(HAVE_HWSERIAL0)
+  if (Serial0_available && serialEvent && Serial0_available()) serialEvent();
+ 9d6:	c0 e0       	ldi	r28, 0x00	; 0
+ 9d8:	d0 e0       	ldi	r29, 0x00	; 0
+loop():
+/home/ethan/snap/arduino/current/Arduino/AfriCube_Power_supply_v1/AfriCube_Power_supply_v1.ino:23
+  pinMode(led1, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(led1, HIGH);   // turn the LED on (HIGH is the voltage level)
+ 9da:	81 e0       	ldi	r24, 0x01	; 1
+ 9dc:	0e 94 8c 00 	call	0x118	; 0x118 <digitalWrite.constprop.4>
+/home/ethan/snap/arduino/current/Arduino/AfriCube_Power_supply_v1/AfriCube_Power_supply_v1.ino:24
+  delay(100);                       // wait for a second
+ 9e0:	0e 94 34 02 	call	0x468	; 0x468 <delay.constprop.5>
+/home/ethan/snap/arduino/current/Arduino/AfriCube_Power_supply_v1/AfriCube_Power_supply_v1.ino:25
+  digitalWrite(led1, LOW);    // turn the LED off by making the voltage LOW
+ 9e4:	80 e0       	ldi	r24, 0x00	; 0
+ 9e6:	0e 94 8c 00 	call	0x118	; 0x118 <digitalWrite.constprop.4>
+/home/ethan/snap/arduino/current/Arduino/AfriCube_Power_supply_v1/AfriCube_Power_supply_v1.ino:26
+  delay(100);                       // wait for a second
+ 9ea:	0e 94 34 02 	call	0x468	; 0x468 <delay.constprop.5>
+serialEventRun():
+/home/ethan/snap/arduino/85/.arduino15/packages/MiniCore/hardware/avr/3.0.3/cores/MCUdude_corefiles/HardwareSerial.cpp:67
+ 9ee:	20 97       	sbiw	r28, 0x00	; 0
+ 9f0:	a1 f3       	breq	.-24     	; 0x9da <main+0x8a>
+ 9f2:	0e 94 a0 01 	call	0x340	; 0x340 <Serial0_available()>
+ 9f6:	88 23       	and	r24, r24
+ 9f8:	81 f3       	breq	.-32     	; 0x9da <main+0x8a>
+ 9fa:	0e 94 00 00 	call	0	; 0x0 <__vectors>
+ 9fe:	ed cf       	rjmp	.-38     	; 0x9da <main+0x8a>
+
+00000a00 <__umulhisi3>:
+__umulhisi3():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:564
+ a00:	a2 9f       	mul	r26, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:565
+ a02:	b0 01       	movw	r22, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:566
+ a04:	b3 9f       	mul	r27, r19
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:567
+ a06:	c0 01       	movw	r24, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:568
+ a08:	a3 9f       	mul	r26, r19
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:573
+ a0a:	70 0d       	add	r23, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:574
+ a0c:	81 1d       	adc	r24, r1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:575
+ a0e:	11 24       	eor	r1, r1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:576
+ a10:	91 1d       	adc	r25, r1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:580
+ a12:	b2 9f       	mul	r27, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:581
+ a14:	70 0d       	add	r23, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:582
+ a16:	81 1d       	adc	r24, r1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:583
+ a18:	11 24       	eor	r1, r1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:584
+ a1a:	91 1d       	adc	r25, r1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:585
+ a1c:	08 95       	ret
+
+00000a1e <__tablejump2__>:
+__tablejump2__():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2296
+ a1e:	ee 0f       	add	r30, r30
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2297
+ a20:	ff 1f       	adc	r31, r31
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2328
+ a22:	05 90       	lpm	r0, Z+
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2329
+ a24:	f4 91       	lpm	r31, Z
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2330
+ a26:	e0 2d       	mov	r30, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2331
+ a28:	09 94       	ijmp
+
+00000a2a <_exit>:
+exit():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ a2a:	f8 94       	cli
+
+00000a2c <__stop_program>:
+__stop_program():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ a2c:	ff cf       	rjmp	.-2      	; 0xa2c <__stop_program>
